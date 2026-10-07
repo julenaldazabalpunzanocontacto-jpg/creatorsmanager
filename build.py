@@ -476,13 +476,11 @@ def pagina_inicio(es_en):
   <div class="wrap">
     <h2 class="revelar">Marcas que confían en nosotros</h2>
     <p class="lead revelar">Más de 40 campañas con marcas de hosting, gaming, tecnología, apps y gran consumo de Europa, América y Asia.</p>
-    <div class="cinta-marcas revelar">
-      <div class="marca-hueco">Tu logo aquí</div>
-      <div class="marca-hueco">Tu logo aquí</div>
-      <div class="marca-hueco">Tu logo aquí</div>
-      <div class="marca-hueco">Tu logo aquí</div>
-      <div class="marca-hueco">Tu logo aquí</div>
-      <div class="marca-hueco">Tu logo aquí</div>
+    <div class="cinta-marcas">
+      <div class="marca-logo revelar"><img src="/img/marcas/supabase.png" alt="Supabase" loading="lazy"><span>Supabase</span></div>
+      <div class="marca-logo revelar"><img src="/img/marcas/hostinger.png" alt="Hostinger" loading="lazy"><span>Hostinger</span></div>
+      <div class="marca-logo revelar"><img src="/img/marcas/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
+      <div class="marca-logo revelar"><img src="/img/marcas/hideme.png" alt="hide.me" loading="lazy"><span>hide.me</span></div>
     </div>
   </div>
 </section>
@@ -570,13 +568,11 @@ def pagina_inicio(es_en):
   <div class="wrap">
     <h2 class="revelar">Brands that trust us</h2>
     <p class="lead revelar">Over 40 campaigns with hosting, gaming, tech, app and consumer brands across Europe, the Americas and Asia.</p>
-    <div class="cinta-marcas revelar">
-      <div class="marca-hueco">Your logo here</div>
-      <div class="marca-hueco">Your logo here</div>
-      <div class="marca-hueco">Your logo here</div>
-      <div class="marca-hueco">Your logo here</div>
-      <div class="marca-hueco">Your logo here</div>
-      <div class="marca-hueco">Your logo here</div>
+    <div class="cinta-marcas">
+      <div class="marca-logo revelar"><img src="/img/marcas/supabase.png" alt="Supabase" loading="lazy"><span>Supabase</span></div>
+      <div class="marca-logo revelar"><img src="/img/marcas/hostinger.png" alt="Hostinger" loading="lazy"><span>Hostinger</span></div>
+      <div class="marca-logo revelar"><img src="/img/marcas/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
+      <div class="marca-logo revelar"><img src="/img/marcas/hideme.png" alt="hide.me" loading="lazy"><span>hide.me</span></div>
     </div>
   </div>
 </section>

@@ -37,7 +37,7 @@ Incluyen validación, honeypot anti-spam, mensaje de éxito/error y asunto disti
 
 - **Cifra de MagaGames**: su tarjeta sale sin número de suscriptores. Cuando la tengas, edita build.py (campo "subs" de magagames), ejecuta `python3 build.py` y sube los HTML. Si no quieres tocar Python, dímelo y te paso los HTML ya regenerados.
 - **Cifra de Dagar**: está puesta la de vuestro media kit (6,7M). Las fuentes públicas muestran fotos antiguas del canal con cifras distintas, así que dale un vistazo antes de publicar.
-- **Logos de marcas**: la sección "Marcas que confían en nosotros" tiene 6 huecos con borde discontinuo. Cuando tengas la lista autorizada, pásamela y los monto.
+- **Logos de marcas**: ya están montados Supabase, Hostinger, Arduino y hide.me (img/marcas/). Para añadir otra, suma su logo a esa carpeta y una línea en build.py.
 - **Testimonios**: hay 3 plantillas con corchetes en la portada. Rellénalos o pásamelos.
 - **Datos legales**: en aviso-legal.html y privacidad.html hay dos [COMPLETAR]: tu NIF y tu dirección. Revisa los tres textos legales antes de publicar.
 - **Enlaces de canales**: revisa que los handles de YouTube de xTurbo (@xTurbo_) y ArselJuega sean correctos; el resto vienen de tu prompt.
