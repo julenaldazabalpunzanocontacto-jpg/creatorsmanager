@@ -39,7 +39,7 @@ Incluyen validación, honeypot anti-spam, mensaje de éxito/error y asunto disti
 - **Cifra de Dagar**: está puesta la de vuestro media kit (6,7M). Las fuentes públicas muestran fotos antiguas del canal con cifras distintas, así que dale un vistazo antes de publicar.
 - **Logos de marcas**: ya están montados Supabase, Hostinger, Arduino y hide.me (img/marcas/). Para añadir otra, suma su logo a esa carpeta y una línea en build.py.
 - **Testimonios**: hay 3 plantillas con corchetes en la portada. Rellénalos o pásamelos.
-- **Datos legales**: en aviso-legal.html y privacidad.html hay dos [COMPLETAR]: tu NIF y tu dirección. Revisa los tres textos legales antes de publicar.
+- **Datos legales**: aviso legal y privacidad ya llevan NIF y domicilio. Dale una lectura a los tres textos legales de todos modos.
 - **Enlaces de canales**: revisa que los handles de YouTube de xTurbo (@xTurbo_) y ArselJuega sean correctos; el resto vienen de tu prompt.
 - **Avatares**: si algún día quieres cambiarlos, son los archivos de img/creadores/ (avatar-arsel.jpg, avatar-dagar.jpg, etc.). Mismo nombre, misma carpeta, y listo. Los de MarZy (200px) y Maga (160px) son pequeños: si tienes versiones más grandes, mejor.
 

@@ -1311,13 +1311,13 @@ def pagina_legal(archivo, titulo, cuerpo):
     escribe(f"/{archivo}.html", html)
 
 LEGAL_AVISO = """
-<p>Última revisión: octubre de 2026. Texto base pendiente de revisión por el titular.</p>
+<p>Última revisión: octubre de 2026.</p>
 <h2>Titular del sitio</h2>
 <p>En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que el titular de este sitio web es:</p>
 <ul>
 <li>Titular: Julen Aldazabal Punzano (CreatorsManager)</li>
-<li>NIF: [COMPLETAR]</li>
-<li>Domicilio: [COMPLETAR dirección], Euskadi, España</li>
+<li>NIF: 46373756Y</li>
+<li>Domicilio: Calle Askatasun 3, 48200 Durango (Bizkaia), España</li>
 <li>Email de contacto: contacto@creatorsmanager.es</li>
 </ul>
 <h2>Objeto</h2>
@@ -1333,9 +1333,9 @@ LEGAL_AVISO = """
 """
 
 LEGAL_PRIVACIDAD = """
-<p>Última revisión: octubre de 2026. Texto base pendiente de revisión por el responsable.</p>
+<p>Última revisión: octubre de 2026.</p>
 <h2>Responsable del tratamiento</h2>
-<p>Julen Aldazabal Punzano (CreatorsManager), NIF [COMPLETAR], con domicilio en [COMPLETAR], y email de contacto contacto@creatorsmanager.es.</p>
+<p>Julen Aldazabal Punzano (CreatorsManager), NIF 46373756Y, con domicilio en Calle Askatasun 3, 48200 Durango (Bizkaia), España, y email de contacto contacto@creatorsmanager.es.</p>
 <h2>Qué datos tratamos y con qué finalidad</h2>
 <p>A través de los formularios de este sitio web recogemos únicamente los datos que el usuario facilita (nombre, email, empresa, canal y el contenido de su mensaje) con la finalidad de atender su solicitud: preparar propuestas de campaña para marcas o valorar solicitudes de representación de creadores, y mantener la comunicación posterior relacionada con esa solicitud.</p>
 <h2>Legitimación</h2>
