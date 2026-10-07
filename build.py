@@ -230,7 +230,7 @@ def nav(es_en, activo, ruta_alterna):
 """
 
 def footer(es_en):
-    y = "2019-2026"
+    y = "2025-2026"
     creadores_links = "\n".join(
         f'        <li><a href="{"/en" if es_en else ""}/creadores/{c["slug"]}">{c["nombre"]}</a></li>' for c in CREADORES
     )
@@ -365,7 +365,7 @@ MARCADOR_ES = """  <div class="wrap">
       <div class="marcador-item"><span class="num" data-fin="40" data-prefijo="+">+40</span><span class="des">campañas gestionadas</span></div>
       <div class="marcador-item"><span class="num" data-fin="25" data-prefijo="+" data-sufijo="M">+25M</span><span class="des">suscriptores en el roster</span></div>
       <div class="marcador-item"><span class="num" data-fin="7">7</span><span class="des">creadores representados</span></div>
-      <div class="marcador-item"><span class="num" data-fin="7" data-prefijo="+">+7</span><span class="des">años en el sector, desde 2019</span></div>
+      <div class="marcador-item"><span class="num" data-fin="7" data-prefijo="+">+7</span><span class="des">años de experiencia en el sector</span></div>
     </div>
   </div>"""
 
@@ -374,7 +374,7 @@ MARCADOR_EN = """  <div class="wrap">
       <div class="marcador-item"><span class="num" data-fin="40" data-prefijo="+">+40</span><span class="des">campaigns managed</span></div>
       <div class="marcador-item"><span class="num" data-fin="25" data-prefijo="+" data-sufijo="M">+25M</span><span class="des">subscribers across the roster</span></div>
       <div class="marcador-item"><span class="num" data-fin="7">7</span><span class="des">creators represented</span></div>
-      <div class="marcador-item"><span class="num" data-fin="7" data-prefijo="+">+7</span><span class="des">years in the industry, since 2019</span></div>
+      <div class="marcador-item"><span class="num" data-fin="7" data-prefijo="+">+7</span><span class="des">years of industry experience</span></div>
     </div>
   </div>"""
 
@@ -484,25 +484,6 @@ def pagina_inicio(es_en):
     </div>
   </div>
 </section>
-<section class="seccion seccion-tinta">
-  <div class="wrap">
-    <h2 class="revelar">Lo que dicen de trabajar con nosotros</h2>
-    <div class="testimonios">
-      <div class="testimonio revelar" style="color:var(--tinta)">
-        <blockquote>&ldquo;[Testimonio de una marca: resultado de la campaña y cómo fue el proceso.]&rdquo;</blockquote>
-        <cite>[Nombre], [cargo] en [marca]</cite>
-      </div>
-      <div class="testimonio revelar" style="color:var(--tinta)">
-        <blockquote>&ldquo;[Testimonio de otra marca o agencia internacional.]&rdquo;</blockquote>
-        <cite>[Nombre], [cargo] en [marca]</cite>
-      </div>
-      <div class="testimonio revelar" style="color:var(--tinta)">
-        <blockquote>&ldquo;[Testimonio de un creador del roster sobre la representación.]&rdquo;</blockquote>
-        <cite>[Creador], creador representado</cite>
-      </div>
-    </div>
-  </div>
-</section>
 {franja_cta(False)}
 """
         html += footer(False)
@@ -573,25 +554,6 @@ def pagina_inicio(es_en):
       <div class="marca-logo revelar"><img src="/img/marcas/hostinger.png" alt="Hostinger" loading="lazy"><span>Hostinger</span></div>
       <div class="marca-logo revelar"><img src="/img/marcas/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
       <div class="marca-logo revelar"><img src="/img/marcas/hideme.png" alt="hide.me" loading="lazy"><span>hide.me</span></div>
-    </div>
-  </div>
-</section>
-<section class="seccion seccion-tinta">
-  <div class="wrap">
-    <h2 class="revelar">What it is like to work with us</h2>
-    <div class="testimonios">
-      <div class="testimonio revelar" style="color:var(--tinta)">
-        <blockquote>&ldquo;[Brand testimonial: campaign results and how the process went.]&rdquo;</blockquote>
-        <cite>[Name], [role] at [brand]</cite>
-      </div>
-      <div class="testimonio revelar" style="color:var(--tinta)">
-        <blockquote>&ldquo;[Testimonial from another brand or international agency.]&rdquo;</blockquote>
-        <cite>[Name], [role] at [brand]</cite>
-      </div>
-      <div class="testimonio revelar" style="color:var(--tinta)">
-        <blockquote>&ldquo;[Testimonial from a roster creator about representation.]&rdquo;</blockquote>
-        <cite>[Creator], represented creator</cite>
-      </div>
     </div>
   </div>
 </section>
@@ -1057,14 +1019,14 @@ def pagina_soycreador(es_en):
 
 def pagina_agencia(es_en):
     if not es_en:
-        html = head("es", "Quiénes somos · CreatorsManager, agencia de influencer marketing desde 2019",
-                    "CreatorsManager nació en 2019 de la mano de Julen Aldazabal. Más de 40 campañas conectando marcas con los grandes creadores hispanohablantes de YouTube.",
+        html = head("es", "Quiénes somos · CreatorsManager, agencia de influencer marketing fundada en 2025",
+                    "CreatorsManager, fundada en 2025 por Julen Aldazabal, conecta marcas con los grandes creadores hispanohablantes de YouTube.",
                     "/agencia", "/en/agencia")
         html += nav(False, "/agencia", "/en/agencia")
         html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
   <div class="wrap">
     <h1>Gente del sector, no intermediarios</h1>
-    <p class="lead">CreatorsManager existe desde julio de 2019. Siete años conectando marcas con creadores hispanohablantes de YouTube, campaña a campaña.</p>
+    <p class="lead">CreatorsManager se fundó en 2025, con siete años de oficio detrás: su fundador lleva desde 2019 conectando marcas con creadores hispanohablantes de YouTube, campaña a campaña.</p>
   </div>
 </section>
 <section class="seccion">
@@ -1072,8 +1034,8 @@ def pagina_agencia(es_en):
     <div class="dos-columnas">
       <div>
         <h2 class="revelar">La historia</h2>
-        <p class="revelar">La agencia empezó en 2019 gestionando las marcas de un solo creador de Minecraft. La fórmula era simple: conocer YouTube a fondo, decir que no a lo que no encaja y tratar bien a las dos partes del acuerdo.</p>
-        <p class="revelar">Siete años después, esa fórmula no ha cambiado. Ha cambiado la escala: hoy representamos en exclusiva a 7 creadores que suman más de 25 millones de suscriptores, hemos gestionado más de 40 campañas publicitarias y trabajamos a diario con marcas y agencias de Europa, Estados Unidos y Asia, en castellano y en inglés.</p>
+        <p class="revelar">CreatorsManager se fundó en 2025, pero el oficio viene de antes: Julen lleva desde 2019 gestionando las marcas de creadores de Minecraft. La fórmula siempre ha sido simple: conocer YouTube a fondo, decir que no a lo que no encaja y tratar bien a las dos partes del acuerdo.</p>
+        <p class="revelar">Al formalizarse la agencia, esa fórmula no ha cambiado. Ha cambiado la escala: hoy representamos en exclusiva a 7 creadores que suman más de 25 millones de suscriptores, hemos gestionado más de 40 campañas publicitarias y trabajamos a diario con marcas y agencias de Europa, Estados Unidos y Asia, en castellano y en inglés.</p>
         <p class="revelar">Operamos desde Euskadi, España, con la vista puesta en todo el mercado hispanohablante: España, México, Argentina, Colombia, Chile, Perú y la comunidad hispana de Estados Unidos.</p>
       </div>
       <div class="panel panel-crema revelar" style="align-self:start">
@@ -1101,14 +1063,14 @@ def pagina_agencia(es_en):
         html += footer(False)
         escribe("/agencia.html", html)
     else:
-        html = head("en", "About us · CreatorsManager, influencer marketing agency since 2019",
-                    "CreatorsManager was founded in 2019 by Julen Aldazabal. Over 40 campaigns connecting brands with the top Spanish-speaking YouTube creators.",
+        html = head("en", "About us · CreatorsManager, influencer marketing agency founded in 2025",
+                    "CreatorsManager, founded in 2025 by Julen Aldazabal, connects brands with the top Spanish-speaking YouTube creators.",
                     "/agencia", "/en/agencia", True)
         html += nav(True, "/en/agencia", "/agencia")
         html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
   <div class="wrap">
     <h1>Industry people, not middlemen</h1>
-    <p class="lead">CreatorsManager has been running since July 2019. Seven years connecting brands with Spanish-speaking YouTube creators, campaign by campaign.</p>
+    <p class="lead">CreatorsManager was founded in 2025, with seven years of craft behind it: its founder has been connecting brands with Spanish-speaking YouTube creators since 2019, campaign by campaign.</p>
   </div>
 </section>
 <section class="seccion">
@@ -1116,8 +1078,8 @@ def pagina_agencia(es_en):
     <div class="dos-columnas">
       <div>
         <h2 class="revelar">The story</h2>
-        <p class="revelar">The agency started in 2019 managing brand deals for a single Minecraft creator. The formula was simple: know YouTube inside out, say no to what does not fit, and treat both sides of the deal well.</p>
-        <p class="revelar">Seven years later, that formula has not changed. The scale has: today we exclusively represent 7 creators with over 25 million combined subscribers, we have managed more than 40 advertising campaigns, and we work daily with brands and agencies across Europe, the US and Asia, in Spanish and English.</p>
+        <p class="revelar">CreatorsManager was founded in 2025, but the craft goes back further: Julen has been managing brand deals for Minecraft creators since 2019. The formula has always been simple: know YouTube inside out, say no to what does not fit, and treat both sides of the deal well.</p>
+        <p class="revelar">Formalising the agency changed none of that formula. The scale has changed: today we exclusively represent 7 creators with over 25 million combined subscribers, we have managed more than 40 advertising campaigns, and we work daily with brands and agencies across Europe, the US and Asia, in Spanish and English.</p>
         <p class="revelar">We operate from the Basque Country, Spain, focused on the entire Spanish-speaking market: Spain, Mexico, Argentina, Colombia, Chile, Peru and the Hispanic community in the United States.</p>
       </div>
       <div class="panel panel-crema revelar" style="align-self:start">
