@@ -365,7 +365,7 @@ MARCADOR_ES = """  <div class="wrap">
       <div class="marcador-item"><span class="num" data-fin="40" data-prefijo="+">+40</span><span class="des">campañas gestionadas</span></div>
       <div class="marcador-item"><span class="num" data-fin="25" data-prefijo="+" data-sufijo="M">+25M</span><span class="des">suscriptores en el roster</span></div>
       <div class="marcador-item"><span class="num" data-fin="7">7</span><span class="des">creadores representados</span></div>
-      <div class="marcador-item"><span class="num" data-fin="7" data-prefijo="+">+7</span><span class="des">años de experiencia en el sector</span></div>
+      <div class="marcador-item"><span class="num" data-fin="100" data-prefijo="+" data-sufijo="M">+100M</span><span class="des">visualizaciones al mes en el roster</span></div>
     </div>
   </div>"""
 
@@ -374,7 +374,7 @@ MARCADOR_EN = """  <div class="wrap">
       <div class="marcador-item"><span class="num" data-fin="40" data-prefijo="+">+40</span><span class="des">campaigns managed</span></div>
       <div class="marcador-item"><span class="num" data-fin="25" data-prefijo="+" data-sufijo="M">+25M</span><span class="des">subscribers across the roster</span></div>
       <div class="marcador-item"><span class="num" data-fin="7">7</span><span class="des">creators represented</span></div>
-      <div class="marcador-item"><span class="num" data-fin="7" data-prefijo="+">+7</span><span class="des">years of industry experience</span></div>
+      <div class="marcador-item"><span class="num" data-fin="100" data-prefijo="+" data-sufijo="M">+100M</span><span class="des">monthly views across the roster</span></div>
     </div>
   </div>"""
 
@@ -1026,7 +1026,7 @@ def pagina_agencia(es_en):
         html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
   <div class="wrap">
     <h1>Gente del sector, no intermediarios</h1>
-    <p class="lead">CreatorsManager se fundó en 2025, con siete años de oficio detrás: su fundador lleva desde 2019 conectando marcas con creadores hispanohablantes de YouTube, campaña a campaña.</p>
+    <p class="lead">CreatorsManager se fundó en 2025 para conectar marcas con creadores hispanohablantes de YouTube, campaña a campaña.</p>
   </div>
 </section>
 <section class="seccion">
@@ -1034,13 +1034,13 @@ def pagina_agencia(es_en):
     <div class="dos-columnas">
       <div>
         <h2 class="revelar">La historia</h2>
-        <p class="revelar">CreatorsManager se fundó en 2025, pero el oficio viene de antes: Julen lleva desde 2019 gestionando las marcas de creadores de Minecraft. La fórmula siempre ha sido simple: conocer YouTube a fondo, decir que no a lo que no encaja y tratar bien a las dos partes del acuerdo.</p>
-        <p class="revelar">Al formalizarse la agencia, esa fórmula no ha cambiado. Ha cambiado la escala: hoy representamos en exclusiva a 7 creadores que suman más de 25 millones de suscriptores, hemos gestionado más de 40 campañas publicitarias y trabajamos a diario con marcas y agencias de Europa, Estados Unidos y Asia, en castellano y en inglés.</p>
+        <p class="revelar">CreatorsManager se fundó en 2025 gestionando las marcas de los grandes creadores de Minecraft en español. La fórmula es simple: conocer YouTube a fondo, decir que no a lo que no encaja y tratar bien a las dos partes del acuerdo.</p>
+        <p class="revelar">Hoy representamos en exclusiva a 7 creadores que suman más de 25 millones de suscriptores, hemos gestionado más de 40 campañas publicitarias y trabajamos a diario con marcas y agencias de Europa, Estados Unidos y Asia, en castellano y en inglés.</p>
         <p class="revelar">Operamos desde Euskadi, España, con la vista puesta en todo el mercado hispanohablante: España, México, Argentina, Colombia, Chile, Perú y la comunidad hispana de Estados Unidos.</p>
       </div>
       <div class="panel panel-crema revelar" style="align-self:start">
         <h3>Julen Aldazabal Punzano</h3>
-        <p>Founder e Influencer Marketing Manager. Lleva desde 2019 negociando campañas entre marcas y creadores, y sigue siendo el interlocutor directo de cada cuenta: cuando escribes a CreatorsManager, hablas con quien decide.</p>
+        <p>Founder e Influencer Marketing Manager. Negocia personalmente cada campaña y es el interlocutor directo de cada cuenta: cuando escribes a CreatorsManager, hablas con quien decide.</p>
         <a class="btn" href="https://www.linkedin.com/in/julen-aldazabal-punzano-8974281bb/" target="_blank" rel="noopener">LinkedIn de Julen</a>
       </div>
     </div>
@@ -1070,7 +1070,7 @@ def pagina_agencia(es_en):
         html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
   <div class="wrap">
     <h1>Industry people, not middlemen</h1>
-    <p class="lead">CreatorsManager was founded in 2025, with seven years of craft behind it: its founder has been connecting brands with Spanish-speaking YouTube creators since 2019, campaign by campaign.</p>
+    <p class="lead">CreatorsManager was founded in 2025 to connect brands with Spanish-speaking YouTube creators, campaign by campaign.</p>
   </div>
 </section>
 <section class="seccion">
@@ -1078,13 +1078,13 @@ def pagina_agencia(es_en):
     <div class="dos-columnas">
       <div>
         <h2 class="revelar">The story</h2>
-        <p class="revelar">CreatorsManager was founded in 2025, but the craft goes back further: Julen has been managing brand deals for Minecraft creators since 2019. The formula has always been simple: know YouTube inside out, say no to what does not fit, and treat both sides of the deal well.</p>
-        <p class="revelar">Formalising the agency changed none of that formula. The scale has changed: today we exclusively represent 7 creators with over 25 million combined subscribers, we have managed more than 40 advertising campaigns, and we work daily with brands and agencies across Europe, the US and Asia, in Spanish and English.</p>
+        <p class="revelar">CreatorsManager was founded in 2025 managing brand deals for the biggest Spanish-language Minecraft creators. The formula is simple: know YouTube inside out, say no to what does not fit, and treat both sides of the deal well.</p>
+        <p class="revelar">Today we exclusively represent 7 creators with over 25 million combined subscribers, we have managed more than 40 advertising campaigns, and we work daily with brands and agencies across Europe, the US and Asia, in Spanish and English.</p>
         <p class="revelar">We operate from the Basque Country, Spain, focused on the entire Spanish-speaking market: Spain, Mexico, Argentina, Colombia, Chile, Peru and the Hispanic community in the United States.</p>
       </div>
       <div class="panel panel-crema revelar" style="align-self:start">
         <h3>Julen Aldazabal Punzano</h3>
-        <p>Founder and Influencer Marketing Manager. He has been negotiating campaigns between brands and creators since 2019 and remains the direct contact for every account: when you write to CreatorsManager, you talk to the person who decides.</p>
+        <p>Founder and Influencer Marketing Manager. He personally negotiates every campaign and is the direct contact for every account: when you write to CreatorsManager, you talk to the person who decides.</p>
         <a class="btn" href="https://www.linkedin.com/in/julen-aldazabal-punzano-8974281bb/" target="_blank" rel="noopener">Julen on LinkedIn</a>
       </div>
     </div>
