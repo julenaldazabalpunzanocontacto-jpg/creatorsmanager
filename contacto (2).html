@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto · CreatorsManager</title>
+<meta name="description" content="Cuéntanos tu campaña o preséntanos tu canal. Respondemos en menos de 24 horas laborables, en castellano o en inglés.">
+<link rel="canonical" href="https://creatorsmanager.es/contacto">
+<link rel="alternate" hreflang="es" href="https://creatorsmanager.es/contacto">
+<link rel="alternate" hreflang="en" href="https://creatorsmanager.es/en/contacto">
+<link rel="alternate" hreflang="x-default" href="https://creatorsmanager.es/contacto">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CreatorsManager">
+<meta property="og:title" content="Contacto · CreatorsManager">
+<meta property="og:description" content="Cuéntanos tu campaña o preséntanos tu canal. Respondemos en menos de 24 horas laborables, en castellano o en inglés.">
+<meta property="og:image" content="https://creatorsmanager.es/og-creatorsmanager.jpg">
+<meta property="og:url" content="https://creatorsmanager.es/contacto">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<script defer src="/js/site.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/img/logo-cm.png" alt="CreatorsManager" width="44" height="50">
+      <span>Creators<b>Manager</b></span>
+    </a>
+    <button class="nav-burger" aria-expanded="false" aria-label="Abrir menú">&#9776;</button>
+    <nav class="nav-links">
+      <a href="/">Inicio</a>
+      <a href="/creadores">Creadores</a>
+      <a href="/marcas">Marcas</a>
+      <a href="/soy-creador">Soy creador</a>
+      <a href="/agencia">Agencia</a>
+      <a href="/contacto" class="btn nav-cta" style="padding:10px 18px; font-size:.95rem">Contacto</a>
+      <a href="/en/contacto" class="nav-lang" lang="en" aria-label="English version">EN</a>
+    </nav>
+  </div>
+</header>
+<section class="seccion seccion-tinta" style="padding-bottom:60px">
+  <div class="wrap">
+    <h1>Hablemos</h1>
+    <p class="lead">Respondemos en menos de 24 horas laborables, en castellano o en inglés. Si lo prefieres, escríbenos directamente a <a href="mailto:contacto@creatorsmanager.es" style="color:var(--ambar)">contacto@creatorsmanager.es</a>.</p>
+  </div>
+</section>
+<section class="seccion" style="padding-top:50px">
+  <div class="wrap">
+    <div class="form-tabs">
+      <button class="form-tab activo" data-panel="panel-marca">Soy una marca</button>
+      <button class="form-tab" data-panel="panel-creador">Soy creador</button>
+    </div>
+    <div class="form-panel" id="panel-marca">
+      <form class="form-w3" novalidate>
+        <input type="hidden" name="subject" value="Web · Nueva solicitud de MARCA">
+        <input type="hidden" name="from_name" value="Web CreatorsManager">
+        <input type="checkbox" name="botcheck" class="hpot" tabindex="-1" autocomplete="off">
+        <div class="campos">
+          <div><label for="m-nombre">Nombre y apellidos</label><input id="m-nombre" name="nombre" required autocomplete="name"></div>
+          <div><label for="m-empresa">Empresa</label><input id="m-empresa" name="empresa" required autocomplete="organization"></div>
+          <div><label for="m-email">Email</label><input id="m-email" type="email" name="email" required autocomplete="email"></div>
+          <div><label for="m-web">Web de la empresa</label><input id="m-web" type="url" name="web" placeholder="https://" autocomplete="url"></div>
+          <div><label for="m-pais">País</label><input id="m-pais" name="pais" autocomplete="country-name"></div>
+          <div>
+            <label for="m-formato">Formato que te interesa</label>
+            <select id="m-formato" name="formato">
+              <option>Aún no lo sé</option>
+              <option>Pre-roll 60"</option>
+              <option>Pre-roll 90"</option>
+              <option>Vídeo dedicado</option>
+              <option>Pack de 3 vídeos</option>
+              <option>Pack multicanal</option>
+              <option>Shorts / TikTok / Reels</option>
+            </select>
+          </div>
+          <div class="campo-ancho">
+            <fieldset>
+              <legend>Creadores que te interesan</legend>
+              <div class="check-grid">
+            <label><input type="checkbox" name="creadores[]" value="xturbo"> xTurbo</label>
+            <label><input type="checkbox" name="creadores[]" value="dagar"> Dagar</label>
+            <label><input type="checkbox" name="creadores[]" value="arsel"> Arsel</label>
+            <label><input type="checkbox" name="creadores[]" value="danomc"> DanoMC</label>
+            <label><input type="checkbox" name="creadores[]" value="marzy"> The MarZy</label>
+            <label><input type="checkbox" name="creadores[]" value="mateo"> Mateo Ferruz</label>
+            <label><input type="checkbox" name="creadores[]" value="magagames"> MagaGames</label>
+              </div>
+            </fieldset>
+          </div>
+          <div>
+            <label for="m-presupuesto">Presupuesto aproximado</label>
+            <select id="m-presupuesto" name="presupuesto">
+              <option>Prefiero hablarlo</option>
+              <option>Menos de 3.000 &euro;</option>
+              <option>3.000 - 10.000 &euro;</option>
+              <option>10.000 - 25.000 &euro;</option>
+              <option>Más de 25.000 &euro;</option>
+            </select>
+          </div>
+          <div><label for="m-fechas">Fechas de campaña previstas</label><input id="m-fechas" name="fechas" placeholder="Ej.: segunda quincena de noviembre"></div>
+          <div class="campo-ancho"><label for="m-mensaje">Cuéntanos la campaña</label><textarea id="m-mensaje" name="mensaje" required placeholder="Producto, objetivo, mercado y todo lo que nos ayude a prepararte la propuesta"></textarea></div>
+          <div class="campo-ancho">
+            <label class="consentimiento"><input type="checkbox" required> He leído y acepto la <a href="/privacidad">política de privacidad</a>.</label>
+          </div>
+        </div>
+        <p style="margin:22px 0 0"><button type="submit" class="btn btn-grande">Pedir propuesta</button></p>
+        <p class="form-estado" role="status"></p>
+      </form>
+    </div>
+    <div class="form-panel" id="panel-creador" hidden>
+      <form class="form-w3" novalidate>
+        <input type="hidden" name="subject" value="Web · Nueva solicitud de CREADOR">
+        <input type="hidden" name="from_name" value="Web CreatorsManager">
+        <input type="checkbox" name="botcheck" class="hpot" tabindex="-1" autocomplete="off">
+        <div class="campos">
+          <div><label for="c-nombre">Nombre</label><input id="c-nombre" name="nombre" required autocomplete="name"></div>
+          <div><label for="c-email">Email</label><input id="c-email" type="email" name="email" required autocomplete="email"></div>
+          <div><label for="c-canal">Canal de YouTube</label><input id="c-canal" type="url" name="canal" required placeholder="https://www.youtube.com/@tucanal"></div>
+          <div><label for="c-subs">Suscriptores</label><input id="c-subs" name="suscriptores" placeholder="Ej.: 350.000"></div>
+          <div><label for="c-nicho">Nicho</label><input id="c-nicho" name="nicho" placeholder="Ej.: Minecraft, Roblox, fitness..."></div>
+          <div><label for="c-redes">Otras redes</label><input id="c-redes" name="otras_redes" placeholder="TikTok, Instagram, Twitch..."></div>
+          <div class="campo-ancho"><label for="c-mensaje">Cuéntanos sobre tu canal</label><textarea id="c-mensaje" name="mensaje" required placeholder="Tu contenido, tu audiencia y qué buscas en una agencia"></textarea></div>
+          <div class="campo-ancho">
+            <label class="consentimiento"><input type="checkbox" required> He leído y acepto la <a href="/privacidad">política de privacidad</a>.</label>
+          </div>
+        </div>
+        <p style="margin:22px 0 0"><button type="submit" class="btn btn-grande">Enviar mi canal</button></p>
+        <p class="form-estado" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="pie-grid">
+      <div class="pie-logo">
+        <img src="/img/logo-cm.png" alt="CreatorsManager">
+        <p>Agencia de influencer marketing para el mercado hispanohablante. YouTube primero.</p>
+        <p><a href="mailto:contacto@creatorsmanager.es">contacto@creatorsmanager.es</a></p>
+      </div>
+      <div>
+        <h4>Agencia</h4>
+        <ul>
+          <li><a href="/marcas">Para marcas</a></li>
+          <li><a href="/soy-creador">Para creadores</a></li>
+          <li><a href="/agencia">Quiénes somos</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="https://www.linkedin.com/in/julen-aldazabal-punzano-8974281bb/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Roster</h4>
+        <ul>
+        <li><a href="/creadores/xturbo">xTurbo</a></li>
+        <li><a href="/creadores/dagar">Dagar</a></li>
+        <li><a href="/creadores/arsel">Arsel</a></li>
+        <li><a href="/creadores/danomc">DanoMC</a></li>
+        <li><a href="/creadores/marzy">The MarZy</a></li>
+        <li><a href="/creadores/mateo">Mateo Ferruz</a></li>
+        <li><a href="/creadores/magagames">MagaGames</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal">Aviso legal</a></li>
+          <li><a href="/privacidad">Política de privacidad</a></li>
+          <li><a href="/cookies">Política de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie-legal">&copy; 2019-2026 CreatorsManager &middot; Julen Aldazabal Punzano &middot; Trabajamos con marcas de todo el mundo, en castellano y en inglés.</p>
+  </div>
+</footer>
+<div class="cookies" role="dialog" aria-label="Cookies">
+  <p>Solo usamos cookies técnicas y una preferencia local para recordar esta elección. Sin rastreadores de terceros. <a href="/cookies">Más información</a>.</p>
+  <div class="cookies-botones">
+    <button class="btn" data-cookies="todas">Aceptar</button>
+    <button class="btn btn-hueso" data-cookies="esenciales">Solo esenciales</button>
+  </div>
+</div>
+</body>
+</html>
