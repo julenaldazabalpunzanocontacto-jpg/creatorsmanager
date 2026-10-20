@@ -156,14 +156,24 @@ p{margin:0 0 1em}
 .hero-acciones{display:flex; gap:16px; flex-wrap:wrap; margin-top:30px}
 .hero-nota{margin-top:22px; font-size:.95rem; color:#B8AE99}
 
-/* plantel de avatares flotando */
-.plantel{position:relative; min-height:420px}
+/* plantel de avatares: collage flexible con flotación escalonada */
+.plantel{
+  display:flex; flex-wrap:wrap; justify-content:center; align-content:center;
+  gap:26px 22px;
+}
 .ficha-flotante{
-  position:absolute;
+  position:static;
   width:var(--t,120px);
   text-align:center;
   animation:flotar 7s ease-in-out infinite;
   animation-delay:var(--d,0s);
+}
+.ficha-flotante:nth-child(3n+1){rotate:-3deg}
+.ficha-flotante:nth-child(3n+2){rotate:2.5deg}
+.ficha-flotante:nth-child(3n){rotate:1deg}
+@media (hover:hover){
+  .ficha-flotante img{transition:transform .18s ease}
+  .ficha-flotante:hover img{transform:scale(1.08)}
 }
 .ficha-flotante img{
   width:100%; aspect-ratio:1; object-fit:cover;
@@ -181,11 +191,13 @@ p{margin:0 0 1em}
 }
 @keyframes flotar{
   0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-14px)}
+  50%{transform:translateY(-12px)}
 }
 @media (max-width:920px){
   .hero-grid{grid-template-columns:1fr; padding:64px 22px 96px}
-  .plantel{min-height:330px}
+  .plantel{gap:20px 14px; margin-top:26px}
+  .ficha-flotante{width:calc(var(--t,120px) * .74)}
+  .ficha-flotante span{font-size:.78rem}
 }
 
 /* entrada orquestada del hero */

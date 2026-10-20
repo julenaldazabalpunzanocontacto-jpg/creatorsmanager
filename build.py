@@ -381,17 +381,17 @@ MARCADOR_EN = """  <div class="wrap">
 
 def plantel_hero():
     pos = [
-        ("xturbo",   "top:0; left:6%;",    "148px", "0s"),
-        ("dagar",    "top:4%; right:2%;",  "132px", ".8s"),
-        ("arsel",    "top:38%; left:0;",   "116px", "1.6s"),
-        ("danomc",   "top:44%; right:14%;","124px", ".4s"),
-        ("marzy",    "bottom:0; left:28%;","108px", "1.2s"),
-        ("mateo",    "bottom:2%; right:0;","104px", "2s"),
-        ("magagames","top:22%; left:40%;","112px", "2.4s"),
+        ("xturbo",   "148px", "0s"),
+        ("dagar",    "132px", ".8s"),
+        ("arsel",    "116px", "1.6s"),
+        ("danomc",   "124px", ".4s"),
+        ("marzy",    "108px", "1.2s"),
+        ("mateo",    "104px", "2s"),
+        ("magagames","112px", "2.4s"),
     ]
     fichas = "\n".join(
-        f'        <div class="ficha-flotante" style="{estilo} --t:{t}; --d:{d}"><img src="/img/creadores/avatar-{slug}.jpg" alt="" width="132" height="132"><span>{next(c["nombre"] for c in CREADORES if c["slug"] == slug)}</span></div>'
-        for slug, estilo, t, d in pos
+        f'        <div class="ficha-flotante" style="--t:{t}; --d:{d}"><img src="/img/creadores/avatar-{slug}.jpg" alt="" width="132" height="132"><span>{next(c["nombre"] for c in CREADORES if c["slug"] == slug)}</span></div>'
+        for slug, t, d in pos
     )
     return f'      <div class="plantel" data-entrada style="--orden:3" aria-hidden="true">\n{fichas}\n      </div>'
 
