@@ -269,7 +269,7 @@ def footer(es_en):
           <li><a href="/cookies">Cookie policy (ES)</a></li>
         </ul>
       </div>"""
-        claim = "Influencer marketing agency for the Spanish-speaking market. YouTube first."
+        claim = "Influencer marketing agency for the Spanish-speaking market."
         aviso = "CreatorsManager works with brands worldwide in Spanish and English."
     else:
         cols = f"""      <div>
@@ -296,7 +296,7 @@ def footer(es_en):
           <li><a href="/cookies">Política de cookies</a></li>
         </ul>
       </div>"""
-        claim = "Agencia de influencer marketing para el mercado hispanohablante. YouTube primero."
+        claim = "Agencia de influencer marketing para el mercado hispanohablante."
         aviso = "Trabajamos con marcas de todo el mundo, en castellano y en inglés."
     cookies_txt = (
         "We only use technical cookies and a local preference to remember this choice. No third-party trackers.",
