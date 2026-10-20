@@ -710,3 +710,12 @@ footer::after{
   .hero-scroll{display:none}
   .kicker{font-size:.72rem; letter-spacing:.12em; padding:5px 13px}
 }
+
+/* ---------- Menú móvil: ritmo y aire en la rejilla de creadores ---------- */
+@media (max-width:920px){
+  .nav-links{gap:2px; padding:18px 22px 28px}
+  .nav-drop-panel{margin:14px 0 22px; gap:12px; padding:0}
+  .nav-drop-panel a{padding:10px 14px 10px 10px}
+  .nav-cta{margin:14px 0 0}
+  .nav-lang{margin-top:10px; text-align:center}
+}
