@@ -1,4 +1,41 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/xturbo",
+      "destination": "/creadores/xturbo",
+      "permanent": true
+    },
+    {
+      "source": "/dagar",
+      "destination": "/creadores/dagar",
+      "permanent": true
+    },
+    {
+      "source": "/arsel",
+      "destination": "/creadores/arsel",
+      "permanent": true
+    },
+    {
+      "source": "/danomc",
+      "destination": "/creadores/danomc",
+      "permanent": true
+    },
+    {
+      "source": "/marzy",
+      "destination": "/creadores/marzy",
+      "permanent": true
+    },
+    {
+      "source": "/mateo",
+      "destination": "/creadores/mateo",
+      "permanent": true
+    },
+    {
+      "source": "/magagames",
+      "destination": "/creadores/magagames",
+      "permanent": true
+    }
+  ]
 }

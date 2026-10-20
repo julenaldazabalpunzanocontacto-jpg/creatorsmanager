@@ -176,6 +176,7 @@ def head(lang, titulo, desc, ruta_es, ruta_en, es_en=False):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171209">
 <title>{titulo}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{DOMINIO}{ruta}">
@@ -386,6 +387,7 @@ def plantel_hero():
         ("danomc",   "top:44%; right:14%;","124px", ".4s"),
         ("marzy",    "bottom:0; left:28%;","108px", "1.2s"),
         ("mateo",    "bottom:2%; right:0;","104px", "2s"),
+        ("magagames","top:22%; left:40%;","112px", "2.4s"),
     ]
     fichas = "\n".join(
         f'        <div class="ficha-flotante" style="{estilo} --t:{t}; --d:{d}"><img src="/img/creadores/avatar-{slug}.jpg" alt="" width="132" height="132"><span>{next(c["nombre"] for c in CREADORES if c["slug"] == slug)}</span></div>'
@@ -1040,7 +1042,7 @@ def pagina_agencia(es_en):
       </div>
       <div class="panel panel-crema revelar" style="align-self:start">
         <h3>Julen Aldazabal Punzano</h3>
-        <p>Founder e Influencer Marketing Manager. Negocia personalmente cada campaña y es el interlocutor directo de cada cuenta: cuando escribes a CreatorsManager, hablas con quien decide.</p>
+        <p>Fundador e Influencer Marketing Manager. Negocia personalmente cada campaña y es el interlocutor directo de cada cuenta: cuando escribes a CreatorsManager, hablas con quien decide.</p>
         <a class="btn" href="https://www.linkedin.com/in/julen-aldazabal-punzano-8974281bb/" target="_blank" rel="noopener">LinkedIn de Julen</a>
       </div>
     </div>

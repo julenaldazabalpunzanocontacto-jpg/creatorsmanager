@@ -133,6 +133,7 @@ document.querySelectorAll("form.form-w3").forEach((form) => {
     const botin = form.querySelector('button[type="submit"]');
     estado.className = "form-estado";
     if (form.querySelector('input[name="botcheck"]').value !== "") return; /* honeypot */
+    if (!form.reportValidity()) return; /* validación nativa: campos obligatorios y formato email/url */
     if (WEB3FORMS_KEY.startsWith("PON_AQUI")) {
       estado.textContent = TXT.sinClave;
       estado.classList.add("error");
