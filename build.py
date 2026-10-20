@@ -750,7 +750,7 @@ def pagina_marcas(es_en):
                     "Integraciones, vídeos dedicados y packs multicanal con los grandes creadores hispanohablantes de YouTube. Gestión completa de la campaña.",
                     "/marcas", "/en/marcas")
         html += nav(False, "/marcas", "/en/marcas")
-        formatos_html = "\n".join(f'      <div class="formato revelar"><span class="pico">{t}</span><p>{d}</p></div>' for t, d in formatos)
+        formatos_html = "\n".join(f'      <div class="tf-row revelar"><span class="tf-num" aria-hidden="true">{i+1:02d}</span><div class="tf-cuerpo"><h3>{t}</h3><p>{d}</p></div><span class="tf-flecha" aria-hidden="true">&#8594;</span></div>' for i, (t, d) in enumerate(formatos))
         proceso_html = "\n".join(f'      <li class="paso revelar"><span class="paso-num">{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></li>' for i, (t, d) in enumerate(proceso))
         faq_html = "\n".join(f'      <details class="revelar"><summary>{p}</summary><p>{r}</p></details>' for p, r in faq)
         html += f"""<section class="hero hero-pagina">
@@ -768,7 +768,7 @@ def pagina_marcas(es_en):
   <div class="wrap">
     <h2 class="revelar">Qué hacemos por tu marca</h2>
     <div class="dos-columnas">
-      <div class="panel revelar">
+      <div class="panel panel-tinta revelar">
         <h3>Gestión completa</h3>
         <ul>
           <li>Selección del creador ideal según público objetivo, mercado y producto</li>
@@ -777,7 +777,7 @@ def pagina_marcas(es_en):
           <li>Reporting final con métricas reales del vídeo</li>
         </ul>
       </div>
-      <div class="panel panel-crema revelar">
+      <div class="panel panel-ambar revelar">
         <h3>Complementos que convierten</h3>
         <ul>
           <li>Códigos de descuento propios por creador</li>
@@ -864,7 +864,7 @@ def pagina_marcas(es_en):
                     "Integrations, dedicated videos and multi-channel packs with the top Spanish-speaking YouTube creators. Full campaign management.",
                     "/marcas", "/en/marcas", True)
         html += nav(True, "/en/marcas", "/marcas")
-        formatos_html = "\n".join(f'      <div class="formato revelar"><span class="pico">{t}</span><p>{d}</p></div>' for t, d in formatos)
+        formatos_html = "\n".join(f'      <div class="tf-row revelar"><span class="tf-num" aria-hidden="true">{i+1:02d}</span><div class="tf-cuerpo"><h3>{t}</h3><p>{d}</p></div><span class="tf-flecha" aria-hidden="true">&#8594;</span></div>' for i, (t, d) in enumerate(formatos))
         proceso_html = "\n".join(f'      <li class="paso revelar"><span class="paso-num">{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></li>' for i, (t, d) in enumerate(proceso))
         faq_html = "\n".join(f'      <details class="revelar"><summary>{p}</summary><p>{r}</p></details>' for p, r in faq)
         html += f"""<section class="hero hero-pagina">
@@ -882,7 +882,7 @@ def pagina_marcas(es_en):
   <div class="wrap">
     <h2 class="revelar">What we do for your brand</h2>
     <div class="dos-columnas">
-      <div class="panel revelar">
+      <div class="panel panel-tinta revelar">
         <h3>Full management</h3>
         <ul>
           <li>Creator selection based on your target audience, market and product</li>
@@ -891,7 +891,7 @@ def pagina_marcas(es_en):
           <li>Final reporting with the video's real metrics</li>
         </ul>
       </div>
-      <div class="panel panel-crema revelar">
+      <div class="panel panel-ambar revelar">
         <h3>Extras that convert</h3>
         <ul>
           <li>Dedicated discount codes per creator</li>
@@ -970,7 +970,7 @@ def pagina_soycreador(es_en):
   <div class="wrap">
     <h2 class="revelar">Qué hacemos por ti</h2>
     <div class="dos-columnas">
-      <div class="panel revelar">
+      <div class="panel panel-tinta revelar">
         <h3>Tu bandeja, gestionada</h3>
         <ul>
           <li>Gestionamos todas las propuestas de marcas que te llegan</li>
@@ -994,7 +994,7 @@ def pagina_soycreador(es_en):
 <section class="seccion seccion-crema">
   <div class="wrap">
     <h2 class="revelar">Nuestra filosofía</h2>
-    <div class="formatos-grid">
+    <div class="formatos-grid escalonado">
       <div class="formato revelar"><span class="pico">Encaje real</span><p>Solo te proponemos colaboraciones que tienen sentido para tu audiencia. Si una marca no encaja, se descarta, por bien que pague.</p></div>
       <div class="formato revelar"><span class="pico">Contenido auténtico</span><p>Las integraciones se adaptan a tu estilo natural. No grabas anuncios forzados: por eso tus patrocinios funcionan y las marcas vuelven.</p></div>
       <div class="formato revelar"><span class="pico">Transparencia</span><p>Contratos claros, pago directo y cuentas claras. Sabes en todo momento qué se ha negociado y en qué condiciones.</p></div>
@@ -1030,7 +1030,7 @@ def pagina_soycreador(es_en):
   <div class="wrap">
     <h2 class="revelar">What we do for you</h2>
     <div class="dos-columnas">
-      <div class="panel revelar">
+      <div class="panel panel-tinta revelar">
         <h3>Your inbox, managed</h3>
         <ul>
           <li>We manage every brand proposal that reaches you</li>
@@ -1054,7 +1054,7 @@ def pagina_soycreador(es_en):
 <section class="seccion seccion-crema">
   <div class="wrap">
     <h2 class="revelar">How we think</h2>
-    <div class="formatos-grid">
+    <div class="formatos-grid escalonado">
       <div class="formato revelar"><span class="pico">Real fit</span><p>We only pitch collaborations that make sense for your audience. If a brand does not fit, it is out, however well it pays.</p></div>
       <div class="formato revelar"><span class="pico">Authentic content</span><p>Integrations adapt to your natural style. You never record forced ads: that is why your sponsorships work and brands come back.</p></div>
       <div class="formato revelar"><span class="pico">Transparency</span><p>Clear contracts, direct payment, clear accounting. You always know what was negotiated and on what terms.</p></div>
@@ -1105,8 +1105,8 @@ def pagina_agencia(es_en):
 <section class="seccion seccion-crema">
   <div class="wrap">
     <h2 class="revelar">En qué creemos</h2>
-    <div class="formatos-grid">
-      <div class="formato revelar"><span class="pico">Encaje real</span><p>Solo proponemos colaboraciones con sentido para la audiencia del creador. Las categorías vetadas de cada creador se respetan siempre.</p></div>
+    <div class="mosaico">
+      <div class="mosaico-destaque revelar"><span class="pico">Encaje real</span><p>Solo proponemos colaboraciones con sentido para la audiencia del creador. Las categorías vetadas de cada creador se respetan siempre.</p></div>
       <div class="formato revelar"><span class="pico">Contenido auténtico</span><p>Las integraciones se adaptan al estilo natural de cada creador, no al revés. Por eso funcionan.</p></div>
       <div class="formato revelar"><span class="pico">Transparencia</span><p>Contratos claros y pago directo, sin plataformas intermediarias opacas.</p></div>
       <div class="formato revelar"><span class="pico">Largo plazo</span><p>Buscamos marcas que repitan y creadores que crezcan. Las campañas de usar y tirar no construyen nada.</p></div>
@@ -1150,8 +1150,8 @@ def pagina_agencia(es_en):
 <section class="seccion seccion-crema">
   <div class="wrap">
     <h2 class="revelar">What we believe in</h2>
-    <div class="formatos-grid">
-      <div class="formato revelar"><span class="pico">Real fit</span><p>We only pitch collaborations that make sense for the creator's audience. Each creator's vetoed categories are always respected.</p></div>
+    <div class="mosaico">
+      <div class="mosaico-destaque revelar"><span class="pico">Real fit</span><p>We only pitch collaborations that make sense for the creator's audience. Each creator's vetoed categories are always respected.</p></div>
       <div class="formato revelar"><span class="pico">Authentic content</span><p>Integrations adapt to each creator's natural style, not the other way round. That is why they work.</p></div>
       <div class="formato revelar"><span class="pico">Transparency</span><p>Clear contracts and direct payment, no opaque middle platforms.</p></div>
       <div class="formato revelar"><span class="pico">Long term</span><p>We look for brands that come back and creators that grow. Throwaway campaigns build nothing.</p></div>
