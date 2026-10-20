@@ -821,3 +821,4 @@ footer::after{
   .escalonado .formato:nth-child(even){transform:translateY(26px)}
   .escalonado .formato:nth-child(even):hover{transform:translateY(23px)}
 }
+.mosaico-destaque .pico{color:var(--tinta)}
