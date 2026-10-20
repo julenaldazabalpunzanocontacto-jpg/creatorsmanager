@@ -822,3 +822,17 @@ footer::after{
   .escalonado .formato:nth-child(even):hover{transform:translateY(23px)}
 }
 .mosaico-destaque .pico{color:var(--tinta)}
+
+/* ---------- Mosaico destaque: titular real, sin hueco muerto ---------- */
+.mosaico-destaque{justify-content:flex-start}
+.mosaico-destaque::before{
+  content:""; position:absolute; right:-34px; top:-34px;
+  width:130px; height:130px; transform:rotate(45deg);
+  border:3px solid rgba(255,196,33,.35); border-radius:20px;
+}
+.mosaico-destaque h3{
+  color:var(--ambar); font-size:clamp(1.8rem,3.2vw,2.4rem);
+  margin:26px 0 0; position:relative; z-index:1;
+}
+.mosaico-destaque h3::before{display:none}
+.mosaico-destaque p{position:relative; z-index:1}

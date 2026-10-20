@@ -1106,7 +1106,7 @@ def pagina_agencia(es_en):
   <div class="wrap">
     <h2 class="revelar">En qué creemos</h2>
     <div class="mosaico">
-      <div class="mosaico-destaque revelar"><span class="pico">Encaje real</span><p>Solo proponemos colaboraciones con sentido para la audiencia del creador. Las categorías vetadas de cada creador se respetan siempre.</p></div>
+      <div class="mosaico-destaque revelar"><h3>Encaje real</h3><p>Solo proponemos colaboraciones con sentido para la audiencia del creador. Las categorías vetadas de cada creador se respetan siempre.</p></div>
       <div class="formato revelar"><span class="pico">Contenido auténtico</span><p>Las integraciones se adaptan al estilo natural de cada creador, no al revés. Por eso funcionan.</p></div>
       <div class="formato revelar"><span class="pico">Transparencia</span><p>Contratos claros y pago directo, sin plataformas intermediarias opacas.</p></div>
       <div class="formato revelar"><span class="pico">Largo plazo</span><p>Buscamos marcas que repitan y creadores que crezcan. Las campañas de usar y tirar no construyen nada.</p></div>
@@ -1151,7 +1151,7 @@ def pagina_agencia(es_en):
   <div class="wrap">
     <h2 class="revelar">What we believe in</h2>
     <div class="mosaico">
-      <div class="mosaico-destaque revelar"><span class="pico">Real fit</span><p>We only pitch collaborations that make sense for the creator's audience. Each creator's vetoed categories are always respected.</p></div>
+      <div class="mosaico-destaque revelar"><h3>Real fit</h3><p>We only pitch collaborations that make sense for the creator's audience. Each creator's vetoed categories are always respected.</p></div>
       <div class="formato revelar"><span class="pico">Authentic content</span><p>Integrations adapt to each creator's natural style, not the other way round. That is why they work.</p></div>
       <div class="formato revelar"><span class="pico">Transparency</span><p>Clear contracts and direct payment, no opaque middle platforms.</p></div>
       <div class="formato revelar"><span class="pico">Long term</span><p>We look for brands that come back and creators that grow. Throwaway campaigns build nothing.</p></div>
