@@ -536,3 +536,172 @@ footer{background:var(--tinta); color:#CFC6B4; padding:60px 0 90px; font-size:.9
   font-weight:800; font-size:.92rem;
 }
 .marca-logo img{height:54px; width:auto; max-width:100%; object-fit:contain; border-radius:9px}
+
+/* ============================================================
+   Ronda 3 · acabado premium
+   ============================================================ */
+:root{--ancho:1180px}
+.seccion{padding:110px 0}
+h2{font-size:clamp(2.3rem,5vw,3.9rem)}
+.lead{font-size:clamp(1.08rem,2.2vw,1.34rem)}
+.seccion-crema{
+  background:
+    radial-gradient(900px 420px at 92% 0%, rgba(247,148,30,.16), transparent 60%),
+    var(--crema);
+}
+
+/* kicker / etiqueta de sección */
+.kicker{
+  display:inline-block;
+  font-weight:800; font-size:.82rem; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--tinta); background:var(--ambar);
+  border:2px solid var(--tinta); border-radius:999px;
+  padding:6px 16px; margin:0 0 22px;
+  box-shadow:3px 3px 0 rgba(0,0,0,.4);
+}
+.seccion:not(.hero) .kicker{box-shadow:var(--sombra-mini)}
+
+/* ---------- Hero cinematográfico ---------- */
+.hero{
+  display:flex; align-items:center;
+  min-height:88svh;
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.055 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>"),
+    radial-gradient(1100px 560px at 88% 12%, rgba(247,148,30,.16), transparent 62%),
+    radial-gradient(820px 480px at 4% 96%, rgba(255,196,33,.09), transparent 60%),
+    var(--tinta);
+}
+.hero::before{
+  content:""; position:absolute; inset:-18%;
+  background:
+    radial-gradient(620px 620px at 76% 16%, rgba(255,196,33,.22), transparent 60%),
+    radial-gradient(760px 760px at 10% 88%, rgba(247,148,30,.18), transparent 62%);
+  animation:deriva 15s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes deriva{
+  from{transform:translate3d(-2%,-1%,0) scale(1)}
+  to{transform:translate3d(2%,2%,0) scale(1.07)}
+}
+.hero>.wrap{position:relative; z-index:1; width:100%}
+.hero-grid{padding:100px 22px 128px}
+.hero h1{font-size:clamp(2.9rem,6.6vw,5.6rem); line-height:.98; letter-spacing:0}
+.hero h1 .ambar{
+  background:linear-gradient(100deg,var(--ambar) 15%,var(--naranja) 85%);
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent; -webkit-text-fill-color:transparent;
+}
+.hero .lead{font-size:clamp(1.14rem,2vw,1.4rem); max-width:52ch}
+.hero .kicker{box-shadow:3px 3px 0 rgba(0,0,0,.45)}
+.plantel{transform:translateY(var(--par,0px)); will-change:transform}
+.ficha-flotante img{
+  border-width:3px;
+  box-shadow:0 0 0 5px var(--ambar), 0 18px 34px rgba(0,0,0,.5);
+}
+.hero-scroll{
+  position:absolute; left:50%; bottom:30px; z-index:2;
+  transform:translateX(-50%);
+  width:52px; height:52px; border-radius:50%;
+  border:2px solid var(--ambar); color:var(--ambar);
+  background:rgba(23,18,9,.35);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.3rem; line-height:1; text-decoration:none;
+  animation:cae 2.2s ease-in-out infinite;
+}
+@keyframes cae{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,9px)}}
+@media (max-width:920px){
+  .hero{min-height:0}
+  .hero-grid{padding:72px 22px 118px}
+  .hero h1{font-size:clamp(2.6rem,11vw,3.6rem)}
+}
+
+/* ---------- Botones: brillo al pasar ---------- */
+.btn{position:relative; overflow:hidden}
+.btn::after{
+  content:""; position:absolute; top:0; left:-70%; width:45%; height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);
+  transform:skewX(-20deg); transition:left .55s ease;
+  pointer-events:none;
+}
+.btn:hover::after{left:135%}
+
+/* ---------- Nav: subrayado deslizante ---------- */
+.nav-links a:not(.btn):not(.nav-lang){position:relative}
+.nav-links a:not(.btn):not(.nav-lang)::after{
+  content:""; position:absolute; left:13px; right:13px; bottom:4px; height:2px;
+  background:var(--ambar); transform:scaleX(0); transform-origin:left;
+  transition:transform .22s ease;
+}
+.nav-links a:not(.btn):not(.nav-lang):hover::after{transform:scaleX(1)}
+@media (max-width:920px){.nav-links a:not(.btn):not(.nav-lang)::after{display:none}}
+
+/* ---------- Marcador: contraste fuerte ---------- */
+.marcador{margin-top:-72px; gap:22px}
+.marcador-item{
+  background:var(--tinta); color:var(--blanco-roto);
+  border:3px solid var(--tinta);
+  box-shadow:0 16px 36px rgba(23,18,9,.30);
+  padding:30px 20px 26px;
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+.marcador-item:hover{transform:translateY(-4px); box-shadow:0 22px 44px rgba(23,18,9,.34)}
+.marcador-item .num{
+  font-size:clamp(2.5rem,5.4vw,3.7rem);
+  background:linear-gradient(100deg,var(--ambar),var(--naranja));
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent; -webkit-text-fill-color:transparent;
+}
+.marcador-item .des{color:#CFC6B4}
+
+/* ---------- Cartas: elevación y zoom ---------- */
+.carta{transition:transform .18s ease, box-shadow .18s ease}
+.carta:hover{transform:translateY(-6px) rotate(-.6deg); box-shadow:11px 13px 0 var(--tinta)}
+.carta-cabecera{background:linear-gradient(140deg,var(--naranja) 10%,var(--ambar) 95%)}
+.carta-cabecera img{transition:transform .25s ease}
+.carta:hover .carta-cabecera img{transform:scale(1.07)}
+.carta-etiquetas .etiqueta{transition:background .15s ease}
+.carta:hover .etiqueta{background:var(--ambar)}
+
+/* ---------- Paneles y formatos: elevación ---------- */
+.panel, .formato{transition:transform .16s ease, box-shadow .16s ease}
+.panel:hover{transform:translateY(-4px); box-shadow:10px 12px 0 var(--tinta)}
+.formato:hover{transform:translateY(-3px); box-shadow:7px 8px 0 var(--tinta)}
+
+/* ---------- Marquee de marcas ---------- */
+.marquee{
+  overflow:hidden; margin-top:44px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);
+}
+.marquee-pista{
+  display:flex; gap:22px; width:max-content;
+  animation:marquee 24s linear infinite;
+}
+.marquee:hover .marquee-pista{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(calc(-50% - 11px))}}
+.marquee .marca-logo{min-width:200px; justify-content:center}
+.marquee .marca-logo img{height:62px}
+
+/* ---------- Franja CTA ---------- */
+.franja-cta{background:linear-gradient(120deg,var(--naranja) 20%,var(--ambar) 100%)}
+.franja-cta h2{font-size:clamp(2.1rem,4.6vw,3.4rem)}
+
+/* ---------- Pie premium ---------- */
+footer{position:relative; padding:96px 0 44px; overflow:hidden}
+footer::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:5px;
+  background:linear-gradient(90deg,var(--naranja),var(--ambar) 45%,var(--naranja));
+}
+.pie-grid{gap:44px}
+.pie-grid h4{font-size:1.15rem; margin-bottom:18px; color:var(--ambar)}
+.pie-grid a{position:relative}
+.pie-grid a:hover{text-decoration:underline; text-underline-offset:4px}
+.pie-logo img{height:74px}
+footer::after{
+  content:"CREATORSMANAGER";
+  display:block; text-align:center; margin-top:64px;
+  font-family:var(--fuente-display); text-transform:uppercase;
+  font-size:clamp(2.6rem,10.5vw,8rem); line-height:.92; letter-spacing:.05em;
+  color:transparent; -webkit-text-stroke:1.5px rgba(255,196,33,.20);
+  user-select:none; pointer-events:none;
+}

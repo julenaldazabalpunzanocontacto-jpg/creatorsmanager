@@ -180,3 +180,25 @@ if (banner) {
     });
   });
 }
+
+/* ---------- Revelados escalonados (hermanos .revelar) ---------- */
+if (!reduceMotion) {
+  document.querySelectorAll(".revelar").forEach((el) => {
+    const hermanos = Array.from(el.parentElement.children).filter((h) => h.classList.contains("revelar"));
+    const i = hermanos.indexOf(el);
+    if (i > 0) el.style.transitionDelay = Math.min(i * 70, 350) + "ms";
+  });
+}
+
+/* ---------- Parallax suave del plantel del hero ---------- */
+const plantel = document.querySelector(".plantel");
+if (hero && plantel && !reduceMotion) {
+  let pendiente = false;
+  const aplica = () => {
+    plantel.style.setProperty("--par", (window.scrollY * -0.08).toFixed(1) + "px");
+    pendiente = false;
+  };
+  window.addEventListener("scroll", () => {
+    if (!pendiente) { pendiente = true; requestAnimationFrame(aplica); }
+  }, { passive: true });
+}

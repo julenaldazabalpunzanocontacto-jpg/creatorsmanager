@@ -80,9 +80,9 @@ CREADORES = [
         "datos_es": [("3,6M", "suscriptores"), ("+50M", "visualizaciones al mes"), ("82%", "del consumo en Smart TV"), ("53%", "audiencia femenina")],
         "datos_en": [("3.6M", "subscribers"), ("+50M", "monthly views"), ("82%", "of viewing on Smart TV"), ("53%", "female audience")],
         "bio_es": """<p>DanoMC es contenido familiar de Minecraft y gaming que se ve en el salón: más del 82% de su consumo llega desde Smart TV. Su audiencia rompe el tópico del gaming: 53% femenina, con núcleos fuertes entre los 25 y los 44 años. Padres y madres viendo vídeos con sus hijos.</p>
-<p>Opera una red de cinco canales (reacciones, Roblox, gameplays y más), lo que permite montar packs promocionales en varios canales a la vez con una sola negociación.</p>""",
+<p>Opera una red de canales (reacciones, Roblox, gameplays y más), lo que permite montar packs promocionales en varios canales a la vez con una sola negociación.</p>""",
         "bio_en": """<p>DanoMC makes family Minecraft and gaming content watched in the living room: over 82% of his viewing comes from Smart TV. His audience breaks the gaming stereotype: 53% female, with strong segments between 25 and 44 years old. Parents watching videos with their kids.</p>
-<p>He runs a network of five channels (reactions, Roblox, gameplays and more), which makes multi-channel promo packs possible with a single negotiation.</p>""",
+<p>He runs a network of channels (reactions, Roblox, gameplays and more), which makes multi-channel promo packs possible with a single negotiation.</p>""",
         "encaje_es": "Juguetes, alimentación, gran consumo, apps y videojuegos. La mejor puerta de entrada al salón familiar hispano.",
         "encaje_en": "Toys, food, consumer goods, apps and video games. The best route into the Spanish-speaking family living room.",
         "canales": [
@@ -90,7 +90,6 @@ CREADORES = [
             ("DanoMC Reacciona", "https://www.youtube.com/@DanoMinecraft", "reacciones", "reactions"),
             ("DanoBlox", "https://www.youtube.com/@DanoBloxMC", "Roblox", "Roblox"),
             ("DanoMC Juega", "https://www.youtube.com/@DanoJuega", "gameplays", "gameplays"),
-            ("KeciyoMC", "https://www.youtube.com/@KeciyoMC", "canal hermano", "sister channel"),
         ],
         "email": None,
     },
@@ -405,7 +404,7 @@ def plantel_hero():
         f'        <div class="ficha-flotante" style="--t:{t}; --d:{d}"><img src="/img/creadores/avatar-{slug}.jpg" alt="" width="132" height="132"><span>{next(c["nombre"] for c in CREADORES if c["slug"] == slug)}</span></div>'
         for slug, t, d in pos
     )
-    return f'      <div class="plantel" data-entrada style="--orden:3" aria-hidden="true">\n{fichas}\n      </div>'
+    return f'      <div class="plantel" data-entrada style="--orden:2" aria-hidden="true">\n{fichas}\n      </div>'
 
 def franja_cta(es_en):
     if es_en:
@@ -437,16 +436,18 @@ def pagina_inicio(es_en):
         html += f"""<section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1 data-entrada style="--orden:0">Los creadores que mueven al público <span class="ambar">hispanohablante</span></h1>
+      <p class="kicker" data-entrada style="--orden:0">Influencer marketing · YouTube</p>
+      <h1 data-entrada style="--orden:.5">Los creadores que mueven al público <span class="ambar">hispanohablante</span></h1>
       <p class="lead" data-entrada style="--orden:1">Agencia de influencer marketing especializada en YouTube. Representamos en exclusiva a 7 creadores con más de 25 millones de suscriptores y gestionamos cada campaña de principio a fin.</p>
-      <div class="hero-acciones" data-entrada style="--orden:2">
+      <div class="hero-acciones" data-entrada style="--orden:1.5">
         <a class="btn btn-grande" href="/marcas">Soy una marca</a>
         <a class="btn btn-hueso btn-grande" href="/soy-creador">Soy creador</a>
       </div>
-      <p class="hero-nota" data-entrada style="--orden:4">Trabajamos a diario con marcas de Europa, Estados Unidos y Asia, en castellano y en inglés.</p>
+      <p class="hero-nota" data-entrada style="--orden:2.5">Trabajamos a diario con marcas de Europa, Estados Unidos y Asia, en castellano y en inglés.</p>
     </div>
 {plantel_hero()}
   </div>
+  <a class="hero-scroll" href="#roster" aria-label="Bajar al roster"><span aria-hidden="true">&#8595;</span></a>
 </section>
 <section>
 {MARCADOR_ES}
@@ -490,11 +491,17 @@ def pagina_inicio(es_en):
   <div class="wrap">
     <h2 class="revelar">Marcas que confían en nosotros</h2>
     <p class="lead revelar">Más de 40 campañas con marcas de hosting, gaming, tecnología, apps y gran consumo de Europa, América y Asia.</p>
-    <div class="cinta-marcas">
-      <div class="marca-logo revelar"><img src="/img/marcas/supabase.png" alt="Supabase" loading="lazy"><span>Supabase</span></div>
-      <div class="marca-logo revelar"><img src="/img/marcas/hostinger.png" alt="Hostinger" loading="lazy"><span>Hostinger</span></div>
-      <div class="marca-logo revelar"><img src="/img/marcas/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
-      <div class="marca-logo revelar"><img src="/img/marcas/hideme.png" alt="hide.me" loading="lazy"><span>hide.me</span></div>
+    <div class="marquee revelar" role="img" aria-label="Supabase, Hostinger, Arduino, hide.me">
+      <div class="marquee-pista">
+        <div class="marca-logo"><img src="/img/marcas/supabase.png" alt="" loading="lazy"><span>Supabase</span></div>
+        <div class="marca-logo"><img src="/img/marcas/hostinger.png" alt="" loading="lazy"><span>Hostinger</span></div>
+        <div class="marca-logo"><img src="/img/marcas/arduino.png" alt="" loading="lazy"><span>Arduino</span></div>
+        <div class="marca-logo"><img src="/img/marcas/hideme.png" alt="" loading="lazy"><span>hide.me</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/supabase.png" alt="" loading="lazy"><span>Supabase</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/hostinger.png" alt="" loading="lazy"><span>Hostinger</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/arduino.png" alt="" loading="lazy"><span>Arduino</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/hideme.png" alt="" loading="lazy"><span>hide.me</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -510,16 +517,18 @@ def pagina_inicio(es_en):
         html += f"""<section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1 data-entrada style="--orden:0">The creators who move the <span class="ambar">Spanish-speaking</span> audience</h1>
+      <p class="kicker" data-entrada style="--orden:0">Influencer marketing · YouTube</p>
+      <h1 data-entrada style="--orden:.5">The creators who move the <span class="ambar">Spanish-speaking</span> audience</h1>
       <p class="lead" data-entrada style="--orden:1">An influencer marketing agency built around YouTube. We exclusively represent 7 creators with over 25 million subscribers and manage every campaign end to end.</p>
-      <div class="hero-acciones" data-entrada style="--orden:2">
+      <div class="hero-acciones" data-entrada style="--orden:1.5">
         <a class="btn btn-grande" href="/en/marcas">I'm a brand</a>
         <a class="btn btn-hueso btn-grande" href="/en/soy-creador">I'm a creator</a>
       </div>
-      <p class="hero-nota" data-entrada style="--orden:4">We work daily with brands across Europe, the US and Asia, in Spanish and English.</p>
+      <p class="hero-nota" data-entrada style="--orden:2.5">We work daily with brands across Europe, the US and Asia, in Spanish and English.</p>
     </div>
 {plantel_hero()}
   </div>
+  <a class="hero-scroll" href="#roster" aria-label="Scroll to the roster"><span aria-hidden="true">&#8595;</span></a>
 </section>
 <section>
 {MARCADOR_EN}
@@ -563,11 +572,17 @@ def pagina_inicio(es_en):
   <div class="wrap">
     <h2 class="revelar">Brands that trust us</h2>
     <p class="lead revelar">Over 40 campaigns with hosting, gaming, tech, app and consumer brands across Europe, the Americas and Asia.</p>
-    <div class="cinta-marcas">
-      <div class="marca-logo revelar"><img src="/img/marcas/supabase.png" alt="Supabase" loading="lazy"><span>Supabase</span></div>
-      <div class="marca-logo revelar"><img src="/img/marcas/hostinger.png" alt="Hostinger" loading="lazy"><span>Hostinger</span></div>
-      <div class="marca-logo revelar"><img src="/img/marcas/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
-      <div class="marca-logo revelar"><img src="/img/marcas/hideme.png" alt="hide.me" loading="lazy"><span>hide.me</span></div>
+    <div class="marquee revelar" role="img" aria-label="Supabase, Hostinger, Arduino, hide.me">
+      <div class="marquee-pista">
+        <div class="marca-logo"><img src="/img/marcas/supabase.png" alt="" loading="lazy"><span>Supabase</span></div>
+        <div class="marca-logo"><img src="/img/marcas/hostinger.png" alt="" loading="lazy"><span>Hostinger</span></div>
+        <div class="marca-logo"><img src="/img/marcas/arduino.png" alt="" loading="lazy"><span>Arduino</span></div>
+        <div class="marca-logo"><img src="/img/marcas/hideme.png" alt="" loading="lazy"><span>hide.me</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/supabase.png" alt="" loading="lazy"><span>Supabase</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/hostinger.png" alt="" loading="lazy"><span>Hostinger</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/arduino.png" alt="" loading="lazy"><span>Arduino</span></div>
+        <div class="marca-logo" aria-hidden="true"><img src="/img/marcas/hideme.png" alt="" loading="lazy"><span>hide.me</span></div>
+      </div>
     </div>
   </div>
 </section>
