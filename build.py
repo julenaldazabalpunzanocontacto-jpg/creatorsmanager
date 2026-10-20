@@ -18,8 +18,8 @@ CREADORES = [
         "slug": "xturbo", "nombre": "xTurbo",
         "subs": "7,4M", "subs_en": "7.4M",
         "tags": "minecraft,espana,latam",
-        "chips_es": ["Minecraft", "España y LATAM"],
-        "chips_en": ["Minecraft", "Spain and LATAM"],
+        "chips_es": ["Minecraft", "España", "LATAM"],
+        "chips_en": ["Minecraft", "Spain", "LATAM"],
         "datos_es": [("7,4M", "suscriptores"), ("+40M", "visualizaciones al mes"), ("Minecraft", "nicho principal")],
         "datos_en": [("7.4M", "subscribers"), ("+40M", "monthly views"), ("Minecraft", "main niche")],
         "bio_es": """<p>xTurbo es uno de los canales de Minecraft más grandes del mercado hispanohablante. Retos, récords, manhunts y series de alta energía que conectan con un público joven y muy activo en España y Latinoamérica.</p>
@@ -55,8 +55,8 @@ CREADORES = [
         "slug": "arsel", "nombre": "Arsel",
         "subs": "6,5M", "subs_en": "6.5M",
         "tags": "minecraft,espana,latam",
-        "chips_es": ["Minecraft", "España y LATAM"],
-        "chips_en": ["Minecraft", "Spain and LATAM"],
+        "chips_es": ["Minecraft", "España", "LATAM"],
+        "chips_en": ["Minecraft", "Spain", "LATAM"],
         "datos_es": [("6,5M", "suscriptores"), ("Pre-roll", "formato estrella: 60 y 90 segundos"), ("Rodaje in-game", "integraciones dentro de Minecraft")],
         "datos_en": [("6.5M", "subscribers"), ("Pre-roll", "signature format: 60 and 90 seconds"), ("In-game", "integrations shot inside Minecraft")],
         "bio_es": """<p>Arsel es un referente del Minecraft hispanohablante con un estilo elaborado y reconocible. Sus integraciones publicitarias se ruedan dentro del propio juego, con escenarios construidos a medida para cada marca, y por eso no se sienten como anuncios: se sienten como parte del vídeo.</p>
@@ -75,8 +75,8 @@ CREADORES = [
         "slug": "danomc", "nombre": "DanoMC",
         "subs": "3,6M", "subs_en": "3.6M",
         "tags": "minecraft,roblox,familiar,espana,latam",
-        "chips_es": ["Minecraft", "Familiar", "Multicanal"],
-        "chips_en": ["Minecraft", "Family", "Multi-channel"],
+        "chips_es": ["Minecraft", "Roblox", "Familiar"],
+        "chips_en": ["Minecraft", "Roblox", "Family"],
         "datos_es": [("3,6M", "suscriptores"), ("+50M", "visualizaciones al mes"), ("82%", "del consumo en Smart TV"), ("53%", "audiencia femenina")],
         "datos_en": [("3.6M", "subscribers"), ("+50M", "monthly views"), ("82%", "of viewing on Smart TV"), ("53%", "female audience")],
         "bio_es": """<p>DanoMC es contenido familiar de Minecraft y gaming que se ve en el salón: más del 82% de su consumo llega desde Smart TV. Su audiencia rompe el tópico del gaming: 53% femenina, con núcleos fuertes entre los 25 y los 44 años. Padres y madres viendo vídeos con sus hijos.</p>
@@ -98,8 +98,8 @@ CREADORES = [
         "slug": "marzy", "nombre": "The MarZy",
         "subs": "3,6M", "subs_en": "3.6M",
         "tags": "minecraft,espana",
-        "chips_es": ["Minecraft narrativo", "España"],
-        "chips_en": ["Narrative Minecraft", "Spain"],
+        "chips_es": ["Minecraft", "España"],
+        "chips_en": ["Minecraft", "Spain"],
         "datos_es": [("3,6M", "suscriptores"), ("+695", "vídeos publicados"), ("10-23M", "visualizaciones en su serie estrella")],
         "datos_en": [("3.6M", "subscribers"), ("+695", "published videos"), ("10-23M", "views on his flagship series")],
         "bio_es": """<p>The MarZy hace Minecraft narrativo y cinematográfico: misterio, bases secretas, clanes, infiltraciones y supervivencia. Su serie estrella de supervivencia en bases secretas acumula vídeos de entre 10 y 23 millones de visualizaciones.</p>
@@ -119,8 +119,8 @@ CREADORES = [
         "slug": "mateo", "nombre": "Mateo Ferruz",
         "subs": "1,1M", "subs_en": "1.1M",
         "tags": "salud,espana,latam",
-        "chips_es": ["Salud y fitness", "Divulgación"],
-        "chips_en": ["Health and fitness", "Science-based"],
+        "chips_es": ["Salud y fitness", "España", "LATAM"],
+        "chips_en": ["Health & fitness", "Spain", "LATAM"],
         "datos_es": [("1,1M", "suscriptores en YouTube"), ("22,7M", "visualizaciones en 28 días"), ("78,8%", "de retención media"), ("66%", "de usuarios recurrentes")],
         "datos_en": [("1.1M", "YouTube subscribers"), ("22.7M", "views in 28 days"), ("78.8%", "average watch percentage"), ("66%", "returning viewers")],
         "bio_es": """<p>Mateo Ferruz hace divulgación viral sobre el cuerpo humano, el entrenamiento, la nutrición y el sueño, siempre con base científica. Sus métricas de retención son excepcionales: un 78,8% de porcentaje medio visto y dos de cada tres espectadores que vuelven.</p>
@@ -140,8 +140,8 @@ CREADORES = [
         "slug": "magagames", "nombre": "MagaGames",
         "subs": None, "subs_en": None,
         "tags": "minecraft,familiar,espana,latam",
-        "chips_es": ["Minecraft", "Familiar", "España, LATAM y EE. UU."],
-        "chips_en": ["Minecraft", "Family", "Spain, LATAM and US"],
+        "chips_es": ["Minecraft", "Familiar", "España", "LATAM"],
+        "chips_en": ["Minecraft", "Family", "Spain", "LATAM"],
         "datos_es": [("Familiar", "retos, series y roleplay"), ("3 mercados", "España, LATAM e hispanos en EE. UU.")],
         "datos_en": [("Family", "challenges, series and roleplay"), ("3 markets", "Spain, LATAM and US Hispanics")],
         "bio_es": """<p>MagaGames hace Minecraft family-friendly: retos, series y roleplay pensados para público joven y familias. Su comunidad se reparte entre España, Latinoamérica y la comunidad hispana de Estados Unidos, lo que lo convierte en una vía directa a tres mercados a la vez.</p>
@@ -210,10 +210,22 @@ def nav(es_en, activo, ruta_alterna):
     items = NAV_EN if es_en else NAV_ES
     contacto = ("/en/contacto", "Contact") if es_en else ("/contacto", "Contacto")
     lang_label = "ES" if es_en else "EN"
-    enlaces = "\n".join(
-        f'      <a href="{url}"{" class=\"activo\"" if url == activo else ""}>{txt}</a>'
-        for txt, url in items
-    )
+    enlaces_l = []
+    for txt, url in items:
+        act = ' class="activo"' if url == activo else ""
+        if url in ("/creadores", "/en/creadores"):
+            pref = "/en" if es_en else ""
+            pills = "\n".join(
+                f'          <a href="{pref}/creadores/{c["slug"]}"><img src="/img/creadores/avatar-{c["slug"]}.jpg" alt="" width="26" height="26"><span>{c["nombre"]}</span></a>'
+                for c in CREADORES
+            )
+            enlaces_l.append(
+                f'      <div class="nav-drop">\n        <a href="{url}"{act}>{txt}</a>\n'
+                f'        <div class="nav-drop-panel">\n{pills}\n        </div>\n      </div>'
+            )
+        else:
+            enlaces_l.append(f'      <a href="{url}"{act}>{txt}</a>')
+    enlaces = "\n".join(enlaces_l)
     return f"""<header class="nav">
   <div class="wrap nav-inner">
     <a href="{'/en/' if es_en else '/'}" class="nav-logo">
@@ -451,7 +463,7 @@ def pagina_inicio(es_en):
   <div class="wrap">
     <h2 class="revelar">Qué hacemos</h2>
     <div class="dos-columnas">
-      <div class="panel revelar">
+      <div class="panel panel-ambar revelar">
         <h3>Para marcas</h3>
         <ul>
           <li>Seleccionamos al creador ideal según tu público, mercado y producto</li>
@@ -461,7 +473,7 @@ def pagina_inicio(es_en):
         </ul>
         <p style="margin:18px 0 0"><a class="btn" href="/marcas">Servicios para marcas</a></p>
       </div>
-      <div class="panel panel-ambar revelar">
+      <div class="panel revelar">
         <h3>Para creadores</h3>
         <ul>
           <li>Representación comercial exclusiva y gestión de tu bandeja de marcas</li>
@@ -524,7 +536,7 @@ def pagina_inicio(es_en):
   <div class="wrap">
     <h2 class="revelar">What we do</h2>
     <div class="dos-columnas">
-      <div class="panel revelar">
+      <div class="panel panel-ambar revelar">
         <h3>For brands</h3>
         <ul>
           <li>We match you with the right creator for your audience, market and product</li>
@@ -534,7 +546,7 @@ def pagina_inicio(es_en):
         </ul>
         <p style="margin:18px 0 0"><a class="btn" href="/en/marcas">Services for brands</a></p>
       </div>
-      <div class="panel panel-ambar revelar">
+      <div class="panel revelar">
         <h3>For creators</h3>
         <ul>
           <li>Exclusive commercial representation and full inbox management</li>
@@ -618,7 +630,7 @@ def pagina_creador(c, es_en):
     datos = c["datos_en"] if es_en else c["datos_es"]
     bio = c["bio_en"] if es_en else c["bio_es"]
     encaje = c["encaje_en"] if es_en else c["encaje_es"]
-    etiquetas = "".join(f'<span class="etiqueta" style="background:var(--papel)">{ch}</span>' for ch in chips)
+    etiquetas = "".join(f'<span class="etiqueta">{ch}</span>' for ch in chips)
     datos_html = "\n".join(f'        <div class="dato"><b>{b}</b><span>{s}</span></div>' for b, s in datos)
     canales_items = []
     for nombre, url, nota_es, nota_en in c["canales"]:
@@ -773,7 +785,7 @@ def pagina_marcas(es_en):
   <div class="wrap">
     <h2 class="revelar">Cómo trabajamos</h2>
     <p class="lead revelar">Seis pasos, un interlocutor y cero sorpresas.</p>
-    <ol class="proceso">
+    <ol class="proceso revelar">
 {proceso_html}
     </ol>
   </div>
@@ -875,7 +887,7 @@ def pagina_marcas(es_en):
   <div class="wrap">
     <h2 class="revelar">How we work</h2>
     <p class="lead revelar">Six steps, one point of contact, zero surprises.</p>
-    <ol class="proceso">
+    <ol class="proceso revelar">
 {proceso_html}
     </ol>
   </div>
