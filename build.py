@@ -390,7 +390,7 @@ MARCADOR_EN = """  <div class="wrap">
     </div>
   </div>"""
 
-def plantel_hero():
+def plantel_hero(es_en=False):
     pos = [
         ("xturbo",   "148px", "0s"),
         ("dagar",    "132px", ".8s"),
@@ -401,10 +401,10 @@ def plantel_hero():
         ("magagames","112px", "2.4s"),
     ]
     fichas = "\n".join(
-        f'        <div class="ficha-flotante" style="--t:{t}; --d:{d}"><img src="/img/creadores/avatar-{slug}.jpg" alt="" width="132" height="132"><span>{next(c["nombre"] for c in CREADORES if c["slug"] == slug)}</span></div>'
+        '        <a class="ficha-flotante" style="--t:{t}; --d:{d}" href="{url}" target="_blank" rel="noopener" aria-label="{label}"><img src="/img/creadores/avatar-{slug}.jpg" alt="" width="132" height="132"><span>{nombre}</span></a>'.format(t=t, d=d, slug=slug, url=next(c["canales"][0][1] for c in CREADORES if c["slug"] == slug), nombre=next(c["nombre"] for c in CREADORES if c["slug"] == slug), label=("Canal de YouTube de " if not es_en else "") + next(c["nombre"] for c in CREADORES if c["slug"] == slug) + ("" if not es_en else "'s YouTube channel"))
         for slug, t, d in pos
     )
-    return f'      <div class="plantel" data-entrada style="--orden:2" aria-hidden="true">\n{fichas}\n      </div>'
+    return f'      <div class="plantel" data-entrada style="--orden:2">\n{fichas}\n      </div>'
 
 def franja_cta(es_en):
     if es_en:

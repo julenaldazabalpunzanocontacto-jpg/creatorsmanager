@@ -836,3 +836,7 @@ footer::after{
 }
 .mosaico-destaque h3::before{display:none}
 .mosaico-destaque p{position:relative; z-index:1}
+
+/* ---------- Plantel enlazable ---------- */
+a.ficha-flotante{display:block; text-decoration:none; cursor:pointer}
+a.ficha-flotante:focus-visible{outline:3px solid var(--ambar); outline-offset:6px; border-radius:24px}
