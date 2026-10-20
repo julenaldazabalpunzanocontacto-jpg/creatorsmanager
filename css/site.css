@@ -705,3 +705,8 @@ footer::after{
   color:transparent; -webkit-text-stroke:1.5px rgba(255,196,33,.20);
   user-select:none; pointer-events:none;
 }
+
+@media (max-width:920px){
+  .hero-scroll{display:none}
+  .kicker{font-size:.72rem; letter-spacing:.12em; padding:5px 13px}
+}
