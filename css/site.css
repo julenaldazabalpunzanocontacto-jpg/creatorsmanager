@@ -719,3 +719,41 @@ footer::after{
   .nav-cta{margin:14px 0 0}
   .nav-lang{margin-top:10px; text-align:center}
 }
+
+/* ---------- Hero de página (landings) ---------- */
+.hero-pagina{display:block; min-height:0}
+.hero-pagina .wrap{position:relative; z-index:1; padding-top:96px; padding-bottom:110px}
+.hero-pagina h1{font-size:clamp(2.7rem,6vw,5rem); line-height:.98}
+.hero-pagina .lead{font-size:clamp(1.1rem,2vw,1.36rem); max-width:56ch}
+@media (max-width:920px){
+  .hero-pagina .wrap{padding:64px 22px 88px}
+  .hero-pagina h1{font-size:clamp(2.4rem,10vw,3.4rem)}
+}
+
+/* ---------- Paneles con marca gráfica ---------- */
+.panel h3{display:flex; align-items:center; gap:12px}
+.panel h3::before{
+  content:""; flex:none; width:13px; height:13px;
+  background:linear-gradient(135deg,var(--ambar),var(--naranja));
+  border:2px solid var(--tinta); border-radius:4px; transform:rotate(45deg);
+}
+
+/* ---------- Formatos con acento superior ---------- */
+.formato{position:relative; overflow:hidden; padding-top:30px}
+.formato::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:5px;
+  background:linear-gradient(90deg,var(--naranja),var(--ambar));
+}
+
+/* ---------- Nube de sectores ---------- */
+.nube-sectores{display:flex; flex-wrap:wrap; gap:12px; margin-top:34px}
+.nube-sectores .etiqueta{
+  font-size:.92rem; padding:8px 18px; background:var(--papel);
+  transition:transform .14s ease, background .14s ease;
+}
+.nube-sectores .etiqueta:hover{background:var(--ambar); transform:translateY(-2px)}
+
+/* ---------- FAQ con vida ---------- */
+.faq details{transition:transform .14s ease, box-shadow .14s ease}
+.faq details:hover{transform:translateY(-2px); box-shadow:6px 7px 0 var(--tinta)}
+.faq details[open]{background:var(--crema)}

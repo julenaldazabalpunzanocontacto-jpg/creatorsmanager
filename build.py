@@ -753,11 +753,12 @@ def pagina_marcas(es_en):
         formatos_html = "\n".join(f'      <div class="formato revelar"><span class="pico">{t}</span><p>{d}</p></div>' for t, d in formatos)
         proceso_html = "\n".join(f'      <li class="paso revelar"><span class="paso-num">{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></li>' for i, (t, d) in enumerate(proceso))
         faq_html = "\n".join(f'      <details class="revelar"><summary>{p}</summary><p>{r}</p></details>' for p, r in faq)
-        html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
+        html += f"""<section class="hero hero-pagina">
   <div class="wrap">
-    <h1>Tu marca, dentro del vídeo</h1>
-    <p class="lead">No vendemos menciones: diseñamos integraciones que se adaptan al estilo natural de cada creador. Tú tienes un único interlocutor, apruebas el guion antes de grabar y recibes las métricas reales al final.</p>
-    <div class="hero-acciones" style="margin-top:28px">
+    <p class="kicker" data-entrada style="--orden:0">Para marcas</p>
+    <h1 data-entrada style="--orden:.5">Tu marca, <span class="ambar">dentro del vídeo</span></h1>
+    <p class="lead" data-entrada style="--orden:1">No vendemos menciones: diseñamos integraciones que se adaptan al estilo natural de cada creador. Tú tienes un único interlocutor, apruebas el guion antes de grabar y recibes las métricas reales al final.</p>
+    <div class="hero-acciones" data-entrada style="--orden:1.5; margin-top:28px">
       <a class="btn btn-grande" href="/contacto">Pedir propuesta</a>
       <a class="btn btn-hueso btn-grande" href="/creadores">Ver el roster</a>
     </div>
@@ -808,7 +809,18 @@ def pagina_marcas(es_en):
 <section class="seccion seccion-crema">
   <div class="wrap">
     <h2 class="revelar">Sectores con los que trabajamos</h2>
-    <p class="lead revelar">Hosting y servidores de Minecraft, VPN y privacidad, periféricos y gaming gear, sillas gaming, videojuegos y apps móviles, marketplaces de juegos, herramientas de IA y software para creadores, tecnología de consumo, editoriales, y salud y deporte.</p>
+    <div class="nube-sectores revelar">
+      <span class="etiqueta">Hosting y servidores de Minecraft</span>
+      <span class="etiqueta">VPN y privacidad</span>
+      <span class="etiqueta">Periféricos y gaming gear</span>
+      <span class="etiqueta">Sillas gaming</span>
+      <span class="etiqueta">Videojuegos y apps móviles</span>
+      <span class="etiqueta">Marketplaces de juegos</span>
+      <span class="etiqueta">Herramientas de IA y software para creadores</span>
+      <span class="etiqueta">Tecnología de consumo</span>
+      <span class="etiqueta">Editoriales</span>
+      <span class="etiqueta">Salud y deporte</span>
+    </div>
   </div>
 </section>
 <section class="seccion">
@@ -855,11 +867,12 @@ def pagina_marcas(es_en):
         formatos_html = "\n".join(f'      <div class="formato revelar"><span class="pico">{t}</span><p>{d}</p></div>' for t, d in formatos)
         proceso_html = "\n".join(f'      <li class="paso revelar"><span class="paso-num">{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></li>' for i, (t, d) in enumerate(proceso))
         faq_html = "\n".join(f'      <details class="revelar"><summary>{p}</summary><p>{r}</p></details>' for p, r in faq)
-        html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
+        html += f"""<section class="hero hero-pagina">
   <div class="wrap">
-    <h1>Your brand, inside the video</h1>
-    <p class="lead">We do not sell mentions: we design integrations that adapt to each creator's natural style. You get one point of contact, you approve the script before recording and you receive real metrics at the end.</p>
-    <div class="hero-acciones" style="margin-top:28px">
+    <p class="kicker" data-entrada style="--orden:0">For brands</p>
+    <h1 data-entrada style="--orden:.5">Your brand, <span class="ambar">inside the video</span></h1>
+    <p class="lead" data-entrada style="--orden:1">We do not sell mentions: we design integrations that adapt to each creator's natural style. You get one point of contact, you approve the script before recording and you receive real metrics at the end.</p>
+    <div class="hero-acciones" data-entrada style="--orden:1.5; margin-top:28px">
       <a class="btn btn-grande" href="/en/contacto">Request a proposal</a>
       <a class="btn btn-hueso btn-grande" href="/en/creadores">See the roster</a>
     </div>
@@ -910,7 +923,18 @@ def pagina_marcas(es_en):
 <section class="seccion seccion-crema">
   <div class="wrap">
     <h2 class="revelar">Industries we usually work with</h2>
-    <p class="lead revelar">Minecraft hosting and servers, VPN and privacy, peripherals and gaming gear, gaming chairs, video games and mobile apps, game marketplaces, AI tools and creator software, consumer tech, publishers, and health and sport.</p>
+    <div class="nube-sectores revelar">
+      <span class="etiqueta">Minecraft hosting and servers</span>
+      <span class="etiqueta">VPN and privacy</span>
+      <span class="etiqueta">Peripherals and gaming gear</span>
+      <span class="etiqueta">Gaming chairs</span>
+      <span class="etiqueta">Video games and mobile apps</span>
+      <span class="etiqueta">Game marketplaces</span>
+      <span class="etiqueta">AI tools and creator software</span>
+      <span class="etiqueta">Consumer tech</span>
+      <span class="etiqueta">Publishers</span>
+      <span class="etiqueta">Health and sport</span>
+    </div>
   </div>
 </section>
 <section class="seccion">
@@ -932,11 +956,12 @@ def pagina_soycreador(es_en):
                     "Representación comercial para creadores hispanohablantes de YouTube: prospección activa de marcas, negociación, filtro de estafas y estrategia a largo plazo.",
                     "/soy-creador", "/en/soy-creador")
         html += nav(False, "/soy-creador", "/en/soy-creador")
-        html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
+        html += f"""<section class="hero hero-pagina">
   <div class="wrap">
-    <h1>Tú creas. Nosotros negociamos.</h1>
-    <p class="lead">Representación comercial exclusiva para creadores hispanohablantes de YouTube. Nos encargamos de las marcas para que tú te encargues del contenido.</p>
-    <div class="hero-acciones" style="margin-top:28px">
+    <p class="kicker" data-entrada style="--orden:0">Para creadores</p>
+    <h1 data-entrada style="--orden:.5">Tú creas. <span class="ambar">Nosotros negociamos.</span></h1>
+    <p class="lead" data-entrada style="--orden:1">Representación comercial exclusiva para creadores hispanohablantes de YouTube. Nos encargamos de las marcas para que tú te encargues del contenido.</p>
+    <div class="hero-acciones" data-entrada style="--orden:1.5; margin-top:28px">
       <a class="btn btn-grande" href="/contacto?tipo=creador">Quiero representación</a>
     </div>
   </div>
@@ -991,11 +1016,12 @@ def pagina_soycreador(es_en):
                     "Commercial representation for Spanish-speaking YouTube creators: active brand prospecting, negotiation, scam filtering and long-term strategy.",
                     "/soy-creador", "/en/soy-creador", True)
         html += nav(True, "/en/soy-creador", "/soy-creador")
-        html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
+        html += f"""<section class="hero hero-pagina">
   <div class="wrap">
-    <h1>You create. We negotiate.</h1>
-    <p class="lead">Exclusive commercial representation for Spanish-speaking YouTube creators. We handle the brands so you can handle the content.</p>
-    <div class="hero-acciones" style="margin-top:28px">
+    <p class="kicker" data-entrada style="--orden:0">For creators</p>
+    <h1 data-entrada style="--orden:.5">You create. <span class="ambar">We negotiate.</span></h1>
+    <p class="lead" data-entrada style="--orden:1">Exclusive commercial representation for Spanish-speaking YouTube creators. We handle the brands so you can handle the content.</p>
+    <div class="hero-acciones" data-entrada style="--orden:1.5; margin-top:28px">
       <a class="btn btn-grande" href="/en/contacto?tipo=creador">I want representation</a>
     </div>
   </div>
@@ -1052,10 +1078,11 @@ def pagina_agencia(es_en):
                     "CreatorsManager, fundada en 2025 por Julen Aldazabal, conecta marcas con los grandes creadores hispanohablantes de YouTube.",
                     "/agencia", "/en/agencia")
         html += nav(False, "/agencia", "/en/agencia")
-        html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
+        html += f"""<section class="hero hero-pagina">
   <div class="wrap">
-    <h1>Gente del sector, no intermediarios</h1>
-    <p class="lead">CreatorsManager se fundó en 2025 para conectar marcas con creadores hispanohablantes de YouTube, campaña a campaña.</p>
+    <p class="kicker" data-entrada style="--orden:0">La agencia</p>
+    <h1 data-entrada style="--orden:.5">Gente del sector, <span class="ambar">no intermediarios</span></h1>
+    <p class="lead" data-entrada style="--orden:1">CreatorsManager se fundó en 2025 para conectar marcas con creadores hispanohablantes de YouTube, campaña a campaña.</p>
   </div>
 </section>
 <section class="seccion">
@@ -1096,10 +1123,11 @@ def pagina_agencia(es_en):
                     "CreatorsManager, founded in 2025 by Julen Aldazabal, connects brands with the top Spanish-speaking YouTube creators.",
                     "/agencia", "/en/agencia", True)
         html += nav(True, "/en/agencia", "/agencia")
-        html += f"""<section class="seccion seccion-tinta" style="padding-bottom:60px">
+        html += f"""<section class="hero hero-pagina">
   <div class="wrap">
-    <h1>Industry people, not middlemen</h1>
-    <p class="lead">CreatorsManager was founded in 2025 to connect brands with Spanish-speaking YouTube creators, campaign by campaign.</p>
+    <p class="kicker" data-entrada style="--orden:0">The agency</p>
+    <h1 data-entrada style="--orden:.5">Industry people, <span class="ambar">not middlemen</span></h1>
+    <p class="lead" data-entrada style="--orden:1">CreatorsManager was founded in 2025 to connect brands with Spanish-speaking YouTube creators, campaign by campaign.</p>
   </div>
 </section>
 <section class="seccion">
