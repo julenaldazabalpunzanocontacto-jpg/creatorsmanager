@@ -1396,7 +1396,7 @@ LEGAL_PRIVACIDAD = """
 <h2>Legitimación</h2>
 <p>La base legal del tratamiento es el consentimiento del interesado, prestado al marcar la casilla de aceptación y enviar el formulario (art. 6.1.a RGPD), y la aplicación de medidas precontractuales a petición del interesado (art. 6.1.b RGPD).</p>
 <h2>Destinatarios</h2>
-<p>Los datos de los formularios se envían a nuestro buzón de correo a través del proveedor Web3Forms, que actúa como encargado del tratamiento para el envío del mensaje. No se ceden datos a terceros salvo obligación legal. Si una solicitud de marca se refiere a un creador concreto, los datos de contacto necesarios podrán compartirse con ese creador para valorar la colaboración.</p>
+<p>Los datos de los formularios se envían a nuestro buzón de correo a través del proveedor FormSubmit (formsubmit.co), que actúa como encargado del tratamiento para el envío del mensaje. No se ceden datos a terceros salvo obligación legal. Si una solicitud de marca se refiere a un creador concreto, los datos de contacto necesarios podrán compartirse con ese creador para valorar la colaboración.</p>
 <h2>Conservación</h2>
 <p>Los datos se conservarán mientras dure la relación derivada de la solicitud y, después, durante los plazos necesarios para atender posibles responsabilidades legales.</p>
 <h2>Derechos</h2>
