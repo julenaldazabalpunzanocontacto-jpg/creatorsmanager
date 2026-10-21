@@ -1246,7 +1246,7 @@ def pagina_contacto(es_en):
           <div><label for="c-subs">Suscriptores</label><input id="c-subs" name="suscriptores" placeholder="Ej.: 350.000"></div>
           <div><label for="c-nicho">Nicho</label><input id="c-nicho" name="nicho" placeholder="Ej.: Minecraft, Roblox, fitness..."></div>
           <div><label for="c-redes">Otras redes</label><input id="c-redes" name="otras_redes" placeholder="TikTok, Instagram, Twitch..."></div>
-          <div class="campo-ancho"><label for="c-mensaje">Cuéntanos sobre tu canal</label><textarea id="c-mensaje" name="mensaje" required placeholder="Tu contenido, tu audiencia y qué buscas en una agencia"></textarea></div>
+          <div class="campo-ancho"><label for="c-mensaje">Cuéntanos sobre tu canal (opcional)</label><textarea id="c-mensaje" name="mensaje" placeholder="Tu contenido, tu audiencia y qué buscas en una agencia"></textarea></div>
           <div class="campo-ancho">
             <label class="consentimiento"><input type="checkbox" required> He leído y acepto la <a href="/privacidad">política de privacidad</a>.</label>
           </div>
@@ -1339,7 +1339,7 @@ def pagina_contacto(es_en):
           <div><label for="c-subs">Subscribers</label><input id="c-subs" name="suscriptores" placeholder="E.g.: 350,000"></div>
           <div><label for="c-nicho">Niche</label><input id="c-nicho" name="nicho" placeholder="E.g.: Minecraft, Roblox, fitness..."></div>
           <div><label for="c-redes">Other platforms</label><input id="c-redes" name="otras_redes" placeholder="TikTok, Instagram, Twitch..."></div>
-          <div class="campo-ancho"><label for="c-mensaje">Tell us about your channel</label><textarea id="c-mensaje" name="mensaje" required placeholder="Your content, your audience and what you expect from an agency"></textarea></div>
+          <div class="campo-ancho"><label for="c-mensaje">Tell us about your channel (optional)</label><textarea id="c-mensaje" name="mensaje" placeholder="Your content, your audience and what you expect from an agency"></textarea></div>
           <div class="campo-ancho">
             <label class="consentimiento"><input type="checkbox" required> I have read and accept the <a href="/privacidad">privacy policy</a> (Spanish).</label>
           </div>
