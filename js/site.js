@@ -1,12 +1,12 @@
 /* CreatorsManager · site.js */
 
 /* ============================================================
-   CLAVE DE WEB3FORMS
-   1. Entra en https://web3forms.com
-   2. Pon contacto@creatorsmanager.es y pulsa "Create Access Key"
-   3. Te llega la clave al correo: pégala aquí abajo entre comillas
+   FORMULARIOS → GOOGLE APPS SCRIPT
+   Los formularios envían los datos a un web app de Apps Script
+   que los vuelca en la hoja de Google de CreatorsManager.
+   Pega aquí abajo la URL de despliegue (termina en /exec).
    ============================================================ */
-const WEB3FORMS_KEY = "PON_AQUI_TU_ACCESS_KEY";
+const APPS_SCRIPT_URL = "PON_AQUI_LA_URL_DEL_WEB_APP";
 
 const LANG = document.documentElement.lang === "en" ? "en" : "es";
 const TXT = {
@@ -125,16 +125,20 @@ if (params.get("tipo") === "creador" || params.get("type") === "creator") {
   if (tabCreador) tabCreador.click();
 }
 
-/* ---------- Envío con Web3Forms ---------- */
+/* ---------- Envío a Google Apps Script ---------- */
+const CARGA_PAGINA = Date.now();
 document.querySelectorAll("form.form-w3").forEach((form) => {
   form.addEventListener("submit", async (ev) => {
     ev.preventDefault();
     const estado = form.querySelector(".form-estado");
     const botin = form.querySelector('button[type="submit"]');
     estado.className = "form-estado";
-    if (form.querySelector('input[name="botcheck"]').value !== "") return; /* honeypot */
+    /* Anti-spam: honeypot (solo un bot marcaría la casilla oculta) */
+    if (form.querySelector('input[name="botcheck"]').checked) return;
+    /* Anti-spam: nadie rellena el formulario en menos de 3 segundos */
+    if (Date.now() - CARGA_PAGINA < 3000) return;
     if (!form.reportValidity()) return; /* validación nativa: campos obligatorios y formato email/url */
-    if (WEB3FORMS_KEY.startsWith("PON_AQUI")) {
+    if (APPS_SCRIPT_URL.startsWith("PON_AQUI")) {
       estado.textContent = TXT.sinClave;
       estado.classList.add("error");
       return;
@@ -143,21 +147,15 @@ document.querySelectorAll("form.form-w3").forEach((form) => {
     botin.textContent = TXT.enviando;
     botin.disabled = true;
     const datos = new FormData(form);
-    datos.append("access_key", WEB3FORMS_KEY);
+    datos.append("pagina", location.pathname);
+    datos.append("idioma", LANG);
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: datos
-      });
-      const json = await res.json();
-      if (json.success) {
-        estado.textContent = TXT.ok;
-        estado.classList.add("ok");
-        form.reset();
-      } else {
-        estado.textContent = TXT.error;
-        estado.classList.add("error");
-      }
+      /* Apps Script no envía cabeceras CORS: no-cors deja pasar el POST
+         (llega y se registra) aunque no podamos leer la respuesta. */
+      await fetch(APPS_SCRIPT_URL, { method: "POST", mode: "no-cors", body: datos });
+      estado.textContent = TXT.ok;
+      estado.classList.add("ok");
+      form.reset();
     } catch (e) {
       estado.textContent = TXT.error;
       estado.classList.add("error");
