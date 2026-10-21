@@ -1,12 +1,12 @@
 /* CreatorsManager · site.js */
 
 /* ============================================================
-   FORMULARIOS → GOOGLE APPS SCRIPT
-   Los formularios envían los datos a un web app de Apps Script
-   que los vuelca en la hoja de Google de CreatorsManager.
-   Pega aquí abajo la URL de despliegue (termina en /exec).
+   FORMULARIOS → FORMSUBMIT
+   Los formularios envían los datos a FormSubmit, que los
+   reenvía al correo de CreatorsManager. Endpoint AJAX público,
+   sin claves en el cliente.
    ============================================================ */
-const APPS_SCRIPT_URL = "PON_AQUI_LA_URL_DEL_WEB_APP";
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/56c73268d8ef244efcab2c1bc6029465";
 
 const LANG = document.documentElement.lang === "en" ? "en" : "es";
 const TXT = {
@@ -138,24 +138,24 @@ document.querySelectorAll("form.form-w3").forEach((form) => {
     /* Anti-spam: nadie rellena el formulario en menos de 3 segundos */
     if (Date.now() - CARGA_PAGINA < 3000) return;
     if (!form.reportValidity()) return; /* validación nativa: campos obligatorios y formato email/url */
-    if (APPS_SCRIPT_URL.startsWith("PON_AQUI")) {
-      estado.textContent = TXT.sinClave;
-      estado.classList.add("error");
-      return;
-    }
     const original = botin.textContent;
     botin.textContent = TXT.enviando;
     botin.disabled = true;
     const datos = new FormData(form);
     datos.append("pagina", location.pathname);
     datos.append("idioma", LANG);
+    datos.append("_subject", "[CreatorsManager] Nuevo lead: " + (datos.get("nombre") || "sin nombre"));
     try {
-      /* Apps Script no envía cabeceras CORS: no-cors deja pasar el POST
-         (llega y se registra) aunque no podamos leer la respuesta. */
-      await fetch(APPS_SCRIPT_URL, { method: "POST", mode: "no-cors", body: datos });
-      estado.textContent = TXT.ok;
-      estado.classList.add("ok");
-      form.reset();
+      const res = await fetch(FORM_ENDPOINT, { method: "POST", body: datos });
+      const json = await res.json().catch(() => ({}));
+      if (res.ok && String(json.success) !== "false") {
+        estado.textContent = TXT.ok;
+        estado.classList.add("ok");
+        form.reset();
+      } else {
+        estado.textContent = TXT.error;
+        estado.classList.add("error");
+      }
     } catch (e) {
       estado.textContent = TXT.error;
       estado.classList.add("error");
