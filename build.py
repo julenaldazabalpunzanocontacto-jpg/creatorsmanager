@@ -1193,7 +1193,7 @@ def pagina_contacto(es_en):
           <div><label for="m-nombre">Nombre y apellidos</label><input id="m-nombre" name="nombre" required autocomplete="name"></div>
           <div><label for="m-empresa">Empresa</label><input id="m-empresa" name="empresa" required autocomplete="organization"></div>
           <div><label for="m-email">Email</label><input id="m-email" type="email" name="email" required autocomplete="email"></div>
-          <div><label for="m-web">Web de la empresa</label><input id="m-web" type="url" name="web" placeholder="https://" autocomplete="url"></div>
+          <div><label for="m-web">Web de la empresa</label><input id="m-web" type="text" name="web" placeholder="tuempresa.com" autocomplete="url"></div>
           <div><label for="m-pais">País</label><input id="m-pais" name="pais" autocomplete="country-name"></div>
           <div>
             <label for="m-formato">Formato que te interesa</label>
@@ -1286,7 +1286,7 @@ def pagina_contacto(es_en):
           <div><label for="m-nombre">Full name</label><input id="m-nombre" name="nombre" required autocomplete="name"></div>
           <div><label for="m-empresa">Company</label><input id="m-empresa" name="empresa" required autocomplete="organization"></div>
           <div><label for="m-email">Email</label><input id="m-email" type="email" name="email" required autocomplete="email"></div>
-          <div><label for="m-web">Company website</label><input id="m-web" type="url" name="web" placeholder="https://" autocomplete="url"></div>
+          <div><label for="m-web">Company website</label><input id="m-web" type="text" name="web" placeholder="yourcompany.com" autocomplete="url"></div>
           <div><label for="m-pais">Country</label><input id="m-pais" name="pais" autocomplete="country-name"></div>
           <div>
             <label for="m-formato">Format you are interested in</label>
