@@ -29,7 +29,7 @@ CREADORES = [
         "encaje_es": "Hosting y servidores de Minecraft, periféricos, videojuegos, apps móviles y marketplaces de juegos.",
         "encaje_en": "Minecraft hosting and servers, peripherals, video games, mobile apps and game marketplaces.",
         "canales": [("xTurbo", "https://www.youtube.com/@xTurbo_", "7,4M", "7.4M")],
-        "email": "marketing@xturbo.es",
+        "email": None,
     },
     {
         "slug": "dagar", "nombre": "Dagar",
@@ -150,7 +150,7 @@ CREADORES = [
         "encaje_es": "Juguetes, bebidas y alimentación, entretenimiento y apps para público joven y familiar.",
         "encaje_en": "Toys, food and drinks, entertainment and apps for young and family audiences.",
         "canales": [("MagaGames", "https://www.youtube.com/@MagaGamesMc", "canal principal", "main channel")],
-        "email": "contacto@magagames.mx",
+        "email": None,
     },
 ]
 
